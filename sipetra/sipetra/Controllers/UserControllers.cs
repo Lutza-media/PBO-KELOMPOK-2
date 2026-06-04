@@ -14,7 +14,7 @@ namespace sipetra.Controllers
         {
             if (string.IsNullOrWhiteSpace(user.nama))
             {
-                throw new Exception("Nama tidak boleh kosong!");
+                throw new Exception("Nama gak boleh kosong!");
             }
 
             if (string.IsNullOrWhiteSpace(user.email))
