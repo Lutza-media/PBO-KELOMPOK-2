@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\apps\\sipetra\\sipetra\\sipetra.csproj": {}
+    "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\sipetra.csproj": {}
   },
   "projects": {
-    "D:\\apps\\sipetra\\sipetra\\sipetra.csproj": {
+    "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\sipetra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\apps\\sipetra\\sipetra\\sipetra.csproj",
+        "projectUniqueName": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\sipetra.csproj",
         "projectName": "sipetra",
-        "projectPath": "D:\\apps\\sipetra\\sipetra\\sipetra.csproj",
+        "projectPath": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\sipetra.csproj",
         "packagesPath": "C:\\Users\\Hype G12\\.nuget\\packages\\",
-        "outputPath": "D:\\apps\\sipetra\\sipetra\\obj\\",
+        "outputPath": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

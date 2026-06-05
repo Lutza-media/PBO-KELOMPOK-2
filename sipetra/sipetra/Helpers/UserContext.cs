@@ -12,28 +12,28 @@ namespace sipetra.Helpers
             using (var conn = DatabaseHelper.GetConnection())
             {
                 conn.Open();
-                string query = "INSERT INTO users (nama, email, password, is_admin) VALUES (@Nama, @Email, @Password, @IsAdmin)";
+                string query = "INSERT INTO users (nama, email, katasandi, is_admin) VALUES (@Nama, @Email, @Katasandi, @IsAdmin)";
                 using (var cmd = new Npgsql.NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Nama", user.nama);
                     cmd.Parameters.AddWithValue("@Email", user.email);
-                    cmd.Parameters.AddWithValue("@Password", user.password);
+                    cmd.Parameters.AddWithValue("@Katasandi", user.katasandi);
                     cmd.Parameters.AddWithValue("@IsAdmin", user.isAdmin);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
 
-        public User GetUserByEmailAndPassword(string email, string password)
+        public User GetUserByEmailAndPassword(string email, string katasandi)
         {
             using (var conn = DatabaseHelper.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id, nama, email, password, is_admin FROM users WHERE LOWER(email) = LOWER(@Email) AND password = @Password";
+                string query = "SELECT id, nama, email, katasandi, is_admin FROM users WHERE LOWER(email) = LOWER(@Email) AND katasandi = @Katasandi";
                 using (var cmd = new Npgsql.NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email?.Trim() ?? string.Empty);
-                    cmd.Parameters.AddWithValue("@Password", password?.Trim() ?? string.Empty);
+                    cmd.Parameters.AddWithValue("@Katasandi", katasandi?.Trim() ?? string.Empty);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -47,7 +47,7 @@ namespace sipetra.Helpers
                             id = reader.GetInt32(reader.GetOrdinal("id")),
                             nama = reader.GetString(reader.GetOrdinal("nama")),
                             email = reader.GetString(reader.GetOrdinal("email")),
-                            password = reader.GetString(reader.GetOrdinal("password")),
+                            katasandi = reader.GetString(reader.GetOrdinal("katasandi")),
                             isAdmin = reader.GetBoolean(reader.GetOrdinal("is_admin"))
                         };
                     }

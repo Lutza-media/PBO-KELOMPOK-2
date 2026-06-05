@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|d:\\tugas\\pbo\\projek pbo\\pbo-kelompok-2\\sipetra\\sipetra\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|d:\\tugas\\pbo\\projek pbo\\pbo-kelompok-2\\sipetra\\sipetra\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|d:\\tugas\\pbo\\projek pbo\\pbo-kelompok-2\\sipetra\\sipetra\\helpers\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\helpers\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|d:\\tugas\\pbo\\projek pbo\\pbo-kelompok-2\\sipetra\\sipetra\\controllers\\usercontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\controllers\\usercontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|d:\\tugas\\pbo\\projek pbo\\pbo-kelompok-2\\sipetra\\sipetra\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|d:\\tugas\\pbo\\projek pbo\\pbo-kelompok-2\\sipetra\\sipetra\\helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +42,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form3.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Form3.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form3.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T04:31:31.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form2.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Form2.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form2.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T04:31:28.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Models\\User.cs",
+              "RelativeDocumentMoniker": "sipetra\\Models\\User.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Models\\User.cs",
+              "RelativeToolTip": "sipetra\\Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:53:38.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\UserContext.cs",
+              "RelativeDocumentMoniker": "sipetra\\Helpers\\UserContext.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\UserContext.cs",
+              "RelativeToolTip": "sipetra\\Helpers\\UserContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T04:10:08.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "sipetra\\Helpers\\DatabaseHelper.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\DatabaseHelper.cs",
+              "RelativeToolTip": "sipetra\\Helpers\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T04:10:05.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form1.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Form1.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form1.cs",
+              "RelativeToolTip": "sipetra\\Views\\Form1.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAD4v0QAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:45:36.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form1.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Form1.cs",
+              "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Form1.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:45:14.344Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserControllers.cs",
               "DocumentMoniker": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Controllers\\UserControllers.cs",
               "RelativeDocumentMoniker": "sipetra\\Controllers\\UserControllers.cs",
               "ToolTip": "D:\\tugas\\PBO\\projek PBO\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Controllers\\UserControllers.cs",
               "RelativeToolTip": "sipetra\\Controllers\\UserControllers.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAMwCwAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T05:47:56.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-03T05:47:56.887Z"
             }
           ]
         }

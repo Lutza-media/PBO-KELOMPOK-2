@@ -22,9 +22,9 @@ namespace sipetra.Controllers
                 throw new Exception("Email tidak boleh kosong!");
             }
 
-            if (string.IsNullOrWhiteSpace(user.password))
+            if (string.IsNullOrWhiteSpace(user.katasandi))
             {
-                throw new Exception("Password tidak boleh kosong!");
+                throw new Exception("Katasandi tidak boleh kosong!");
             }
 
             context.AddUser(user);
@@ -37,12 +37,12 @@ namespace sipetra.Controllers
                 throw new Exception("Email tidak boleh kosong!");
             }
 
-            if (string.IsNullOrWhiteSpace(user.password))
+            if (string.IsNullOrWhiteSpace(user.katasandi))
             {
-                throw new Exception("Password tidak boleh kosong!");
+                throw new Exception("Katasandi tidak boleh kosong!");
             }
 
-            return context.GetUserByEmailAndPassword(user.email, user.password);
+            return context.GetUserByEmailAndPassword(user.email, user.katasandi);
         }
     }
 }

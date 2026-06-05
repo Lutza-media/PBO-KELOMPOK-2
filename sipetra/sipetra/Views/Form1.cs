@@ -30,9 +30,8 @@ namespace sipetra.Views
         {
             return new User
             {
-                
                 email = tbEmail.Text.Trim(),
-                password = tbPassword.Text.Trim()
+                katasandi = tbPassword.Text.Trim()
             };
         }
 
@@ -40,7 +39,7 @@ namespace sipetra.Views
         {
             if (user == null)
             {
-                MessageBox.Show("Login gagal. Email atau Password salah.");
+                MessageBox.Show("Login gagal. Kata Sandi atau Email salah!");
                 return false;
             }
             UserSession.Instance.SetUser(user);

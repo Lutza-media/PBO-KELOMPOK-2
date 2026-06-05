@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\sipetra"
+    "\\sipetra",
+    "\\sipetra\\sipetra",
+    "\\sipetra\\sipetra\\Controllers",
+    "\\sipetra\\sipetra\\Views"
   ],
+  "SelectedNode": "\\sipetra\\sipetra\\Views\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

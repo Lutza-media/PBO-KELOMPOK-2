@@ -9,10 +9,10 @@ namespace sipetra.Models
         public int id { get; set; }
         public string nama { get; set; }
         public string email { get; set; }
-        public string password { get; set; }
+        public string katasandi { get; set; }
         public bool isAdmin { get; set; }
 
-        //public User(int id, string nama, string email, string password, bool isAdmin)
+        //public User(int id, string nama, string email, string katasandi, bool isAdmin)
         //{
         //    this.id = id;
         //    this.nama = nama;

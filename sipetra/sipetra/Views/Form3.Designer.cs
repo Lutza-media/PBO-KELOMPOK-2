@@ -42,47 +42,49 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.Location = new Point(46, 363);
             button1.Name = "button1";
-            button1.Size = new Size(319, 59);
+            button1.Size = new Size(301, 59);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
+            button2.BackColor = Color.PaleGoldenrod;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 192);
+            button2.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(46, 453);
+            button2.Location = new Point(46, 455);
             button2.Name = "button2";
-            button2.Size = new Size(319, 59);
-            button2.TabIndex = 1;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Size = new Size(301, 55);
+            button2.TabIndex = 4;
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            button3.BackColor = Color.PaleGoldenrod;
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 192);
+            button3.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(46, 545);
+            button3.Location = new Point(46, 541);
             button3.Name = "button3";
-            button3.Size = new Size(319, 59);
-            button3.TabIndex = 2;
-            button3.UseVisualStyleBackColor = true;
+            button3.Size = new Size(301, 55);
+            button3.TabIndex = 5;
+            button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            button4.BackColor = Color.PaleGoldenrod;
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 192);
+            button4.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(46, 635);
+            button4.Location = new Point(46, 642);
             button4.Name = "button4";
-            button4.Size = new Size(319, 59);
-            button4.TabIndex = 3;
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button4.Size = new Size(301, 55);
+            button4.TabIndex = 6;
+            button4.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
