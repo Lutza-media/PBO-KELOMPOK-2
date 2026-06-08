@@ -44,5 +44,10 @@ namespace sipetra.Controllers
 
             return context.GetUserByEmailAndPassword(user.email, user.katasandi);
         }
+
+        public bool CheckEmail(string email)
+        {
+            return context.IsEmailExists(email);
+        }
     }
 }

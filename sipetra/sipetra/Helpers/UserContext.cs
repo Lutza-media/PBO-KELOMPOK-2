@@ -54,5 +54,20 @@ namespace sipetra.Helpers
                 }
             }
         }
+
+        public bool IsEmailExists(string email)
+        {
+            using (var conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM users WHERE LOWER(email) = LOWER(@Email)";
+                using (var cmd = new Npgsql.NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Email", email?.Trim() ?? string.Empty);
+                    long count = (long)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
     }
 }
