@@ -60,19 +60,6 @@ namespace sipetra.Views
             return true;
 
         }
-
-        private User GetRegisterRequest()
-        {
-            return new User
-            {
-                nama = tbNama.Text.Trim(),
-                email = tbEmail.Text.Trim(),
-                katasandi = tbKataSandi.Text.Trim(),
-                isAdmin = false
-            };
-
-        }
-
         private void ClearRegisterForm()
         {
             tbNama.Text = "";
