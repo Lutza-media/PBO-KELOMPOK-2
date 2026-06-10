@@ -126,6 +126,7 @@
             Controls.Add(btnBeranda);
             Name = "Tiket";
             Text = "Tiket";
+            Load += Tiket_Load_1;
             ResumeLayout(false);
         }
 

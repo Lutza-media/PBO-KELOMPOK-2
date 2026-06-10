@@ -17,12 +17,29 @@ namespace sipetra.Views
             lblNamaTiket.Text = namaTiket;
             lblHargaTiket.Text = hargaTiket;
             picTiket.Image = fotoTiket;
+
+            btnPembayaran.Click += btnPembayaran_Click;
         }
 
         private void Pemesanan_Tiket_Load(object sender, EventArgs e)
         {
 
         }
+        private void btnPembayaran_Click(object sender, EventArgs e)
+        {
+            DateTime tanggal = dateTimePicker2.Value;
+            int jumlah = (int)numericUpDown1.Value;
+
+            MessageBox.Show(
+                $"Tiket: {lblNamaTiket.Text}\n" +
+                $"Tanggal: {tanggal:dd/MM/yyyy}\n" +
+                $"Jumlah: {jumlah}",
+                "Pemesanan Berhasil"
+            );
+        }
+
+
+
 
     }
 }

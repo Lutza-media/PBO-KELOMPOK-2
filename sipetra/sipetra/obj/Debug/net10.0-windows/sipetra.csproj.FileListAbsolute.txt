@@ -53,3 +53,33 @@ D:\tugas\PBO\projek PBO\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows
 D:\tugas\PBO\projek PBO\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Tiket.resources
 D:\tugas\PBO\projek PBO\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Transaksi.resources
 D:\tugas\PBO\projek PBO\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Pemesanan_Tiket.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\sipetra.exe
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\sipetra.deps.json
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\sipetra.runtimeconfig.json
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\sipetra.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\sipetra.pdb
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\bin\Debug\net10.0-windows\Npgsql.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Properties.Resources.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Beranda.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Daftar.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Login.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Pemesanan_Tiket.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Tiket.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Transaksi.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.AssemblyInfo.cs
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.sourcelink.json
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.csproj.Up2Date
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\refint\sipetra.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.pdb
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.genruntimeconfig.cache
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\ref\sipetra.dll
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.pemesanan1.resources
+C:\Users\admin\source\repos\PBO-KELOMPOK-2\sipetra\sipetra\obj\Debug\net10.0-windows\sipetra.Views.Profil.resources

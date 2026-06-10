@@ -96,23 +96,26 @@ namespace sipetra.Views
 
         private void btnDaftar_Click(object sender, EventArgs e)
         {
-            if (!ValidateRegistrationInput())
-                return;
+            User user = new User();
 
-            try
+            user.Username = tbEmail.Text.Trim();
+            user.Password = tbKataSandi.Text.Trim();
+
+            bool berhasil = user.Register();
+
+            if (berhasil)
             {
-                var req = GetRegisterRequest();
-                HandleRegistrationResult(req);
-            }
+                MessageBox.Show("Pendaftaran Berhasil");
 
-            catch (Exception ex)
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+            else
             {
-                MessageBox.Show($"Terjadi kesalahan saat mendaftar: {ex.Message}");
+                MessageBox.Show("Pendaftaran Gagal");
             }
-            RedirectAfterRegistration();
-
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Login login = new Login();

@@ -6,7 +6,7 @@ namespace sipetra.Helpers
 {
     public class DatabaseHelper
     {
-        private static string connString = "Host=localhost;Port=5432;Database=sipetra;Username=postgres;Password=k3qingwanggy";
+        private static string connString = "Host=localhost;Port=5432;Database=sipetra;Username=postgres;Password=110606";
 
         public static NpgsqlConnection GetConnection()
         {

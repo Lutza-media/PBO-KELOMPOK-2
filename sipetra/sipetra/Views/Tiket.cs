@@ -12,11 +12,14 @@ namespace sipetra
 {
     public partial class Tiket : Form
     {
+
         public Tiket()
         {
             InitializeComponent();
 
+            btnPesanTiketWeekend.Click += btnPesanTiketWeekend_Click;
         }
+
         private User _currentUser;
         public Tiket(User user) : this()
         {
@@ -48,6 +51,29 @@ namespace sipetra
         }
 
         private void btnPesanTiket1_Click(object sender, EventArgs e)
+        {
+            Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
+                "Tiket Weekday",
+                "Rp7.500 / orang",
+                Properties.Resources.weekday // gambar tiket weekday
+            );
+
+            formPesan.Show();
+            this.Hide();
+        }
+
+        private void btnPesanTiketWeekend_Click(object sender, EventArgs e)
+        {
+            Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
+                "Tiket Weekend",
+                "Rp12.000 / orang",
+                Properties.Resources.weekend // gambar tiket weekend
+            );
+
+            formPesan.Show();
+            this.Hide();
+        }
+        private void Tiket_Load_1(object sender, EventArgs e)
         {
 
         }

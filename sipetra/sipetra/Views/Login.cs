@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace sipetra.Views
 {
+
     public partial class Login : Form
     {
         UserControllers userController = new UserControllers();
@@ -14,6 +15,7 @@ namespace sipetra.Views
         {
             InitializeComponent();
         }
+
 
         private bool ValidateLoginInput()
         {
@@ -67,16 +69,25 @@ namespace sipetra.Views
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (!ValidateLoginInput())
-                return;
+            User user = new User();
 
-            var req = GetLoginRequest();
-            var result = userController.Login(req);
+            user.Username = tbEmail.Text.Trim();
+            user.Password = tbKataSandi.Text.Trim();
 
-            if (!HandleLoginResult(result))
-                return;
+            bool berhasil = user.Login();
 
-            RedirectAfterLogin(result);
+            if (berhasil)
+            {
+                MessageBox.Show("Login Berhasil");
+
+                Beranda beranda = new Beranda(user.Username);
+                beranda.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Username atau Password Salah");
+            }
         }
 
         private void btnDaftar_Click(object sender, EventArgs e)
@@ -85,6 +96,8 @@ namespace sipetra.Views
             daftar.Show();
             this.Hide();
         }
+
+
 
         private void chkShow_CheckedChanged(object sender, EventArgs e)
         {
@@ -97,5 +110,6 @@ namespace sipetra.Views
                 tbKataSandi.UseSystemPasswordChar = true;
             }
         }
+
     }
 }
