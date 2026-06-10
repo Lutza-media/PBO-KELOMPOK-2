@@ -10,6 +10,8 @@ namespace sipetra.Views
 
     public partial class Login : Form
     {
+
+
         UserControllers userController = new UserControllers();
         public Login()
         {
@@ -74,13 +76,15 @@ namespace sipetra.Views
             user.Username = tbEmail.Text.Trim();
             user.Password = tbKataSandi.Text.Trim();
 
-            bool berhasil = user.Login();
+            UserControllers controller = new UserControllers();
+
+            bool berhasil = controller.Login(user);
 
             if (berhasil)
             {
                 MessageBox.Show("Login Berhasil");
 
-                Beranda beranda = new Beranda(user.Username);
+                Beranda beranda = new Beranda(user);
                 beranda.Show();
                 this.Hide();
             }
@@ -89,7 +93,6 @@ namespace sipetra.Views
                 MessageBox.Show("Username atau Password Salah");
             }
         }
-
         private void btnDaftar_Click(object sender, EventArgs e)
         {
             Daftar daftar = new Daftar();

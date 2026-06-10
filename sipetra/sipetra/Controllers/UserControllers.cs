@@ -1,48 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using sipetra.Helpers;
+﻿using sipetra.Helpers;
 using sipetra.Models;
+using System;
 
 namespace sipetra.Controllers
 {
     public class UserControllers
     {
         private UserContext context = new UserContext();
-
-        public void RegisterUser(User user)
+        public bool RegisterUser(User user)
         {
-            if (string.IsNullOrWhiteSpace(user.nama))
+            if (string.IsNullOrWhiteSpace(user.Username))
             {
-                throw new Exception("Nama gak boleh kosong!");
+                throw new Exception("Username tidak boleh kosong!");
             }
 
-            if (string.IsNullOrWhiteSpace(user.email))
+            if (string.IsNullOrWhiteSpace(user.Password))
             {
-                throw new Exception("Email tidak boleh kosong!");
+                throw new Exception("Password tidak boleh kosong!");
             }
 
-            if (string.IsNullOrWhiteSpace(user.katasandi))
-            {
-                throw new Exception("Katasandi tidak boleh kosong!");
-            }
-
-            context.AddUser(user);
+            return user.Register();
         }
 
-        public User Login(User user)
+        public bool Login(User user)
         {
-            if (string.IsNullOrWhiteSpace(user.email))
+            if (string.IsNullOrWhiteSpace(user.Username))
             {
-                throw new Exception("Email tidak boleh kosong!");
+                throw new Exception("Username tidak boleh kosong!");
             }
 
-            if (string.IsNullOrWhiteSpace(user.katasandi))
+            if (string.IsNullOrWhiteSpace(user.Password))
             {
-                throw new Exception("Katasandi tidak boleh kosong!");
+                throw new Exception("Password tidak boleh kosong!");
             }
 
-            return context.GetUserByEmailAndPassword(user.email, user.katasandi);
+            return user.Login();
         }
 
         public bool CheckEmail(string email)

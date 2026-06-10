@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using sipetra.Models;
-
-
 
 namespace sipetra.Views
 {
@@ -23,7 +15,12 @@ namespace sipetra.Views
 
         private void Beranda_Load(object sender, EventArgs e)
         {
-            lblWelcome.Text = "Selamat Datang, " + username;
+            this.Text = "Beranda - " + username;
+        }
+
+        private void btnTiket_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Menu Tiket");
         }
     }
 }

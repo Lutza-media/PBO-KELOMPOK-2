@@ -11,6 +11,7 @@ namespace sipetra.Models
         // Encapsulation: field private
         private string username;
         private string password;
+        private bool isAdmin;
 
         // Property untuk mengakses field private
         public string Username
@@ -18,11 +19,15 @@ namespace sipetra.Models
             get { return username; }
             set { username = value; }
         }
-
         public string Password
         {
             get { return password; }
             set { password = value; }
+        }
+        public bool IsAdmin
+        {
+            get { return isAdmin; }
+            private set { isAdmin = value; }
         }
 
         // Connection string disembunyikan dari class lain
@@ -39,6 +44,7 @@ namespace sipetra.Models
         {
             this.username = username;
             this.password = password;
+
         }
 
         // Method Register
@@ -56,7 +62,6 @@ namespace sipetra.Models
                     {
                         cmd.Parameters.AddWithValue("@username", Username);
                         cmd.Parameters.AddWithValue("@password", Password);
-
                         return cmd.ExecuteNonQuery() > 0;
                     }
                 }
@@ -83,7 +88,7 @@ namespace sipetra.Models
                     {
                         cmd.Parameters.AddWithValue("@username", Username);
                         cmd.Parameters.AddWithValue("@password", Password);
-
+                        cmd.Parameters.AddWithValue("@isAdmin", false);
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
 
                         return count > 0;

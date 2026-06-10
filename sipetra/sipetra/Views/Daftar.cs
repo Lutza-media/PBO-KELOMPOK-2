@@ -88,7 +88,9 @@ namespace sipetra.Views
             user.Username = tbEmail.Text.Trim();
             user.Password = tbKataSandi.Text.Trim();
 
-            bool berhasil = user.Register();
+            UserControllers controller = new UserControllers();
+
+            bool berhasil = controller.RegisterUser(user);
 
             if (berhasil)
             {
