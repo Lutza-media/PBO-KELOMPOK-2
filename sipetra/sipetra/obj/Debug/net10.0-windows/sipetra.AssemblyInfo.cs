@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sipetra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23fc2a6c9c36b836d414fbb856958394786a5126")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beaf041561b8aee86fbc7732ca958b2585410859")]
 [assembly: System.Reflection.AssemblyProductAttribute("sipetra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sipetra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
