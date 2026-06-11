@@ -31,7 +31,7 @@ namespace sipetra.Views
         // Tombol kembali ke Beranda
         private void button1_Click(object sender, EventArgs e)
         {
-            Beranda beranda = new Beranda(_currentUser);
+            Beranda beranda = new Beranda(_currentUser.Username);
             beranda.Show();
             this.Hide();
         }

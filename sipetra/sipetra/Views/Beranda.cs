@@ -12,6 +12,10 @@ namespace sipetra.Views
             InitializeComponent();
             this.username = username;
         }
+        public Beranda()
+        {
+            InitializeComponent();
+        }
 
         private void Beranda_Load(object sender, EventArgs e)
         {

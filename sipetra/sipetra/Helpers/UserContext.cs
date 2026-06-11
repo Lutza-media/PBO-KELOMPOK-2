@@ -35,6 +35,7 @@ namespace sipetra.Helpers
                     cmd.Parameters.AddWithValue("@Email", email?.Trim() ?? string.Empty);
                     cmd.Parameters.AddWithValue("@Katasandi", katasandi?.Trim() ?? string.Empty);
 
+
                     using (var reader = cmd.ExecuteReader())
                     {
                         if (!reader.Read())
@@ -47,7 +48,6 @@ namespace sipetra.Helpers
                             Username = reader.GetString(reader.GetOrdinal("nama")),
                             Email = reader.GetString(reader.GetOrdinal("email")),
                             Password = reader.GetString(reader.GetOrdinal("katasandi")),
-                            IsAdmin = reader.GetBoolean(reader.GetOrdinal("is_admin"))
                         };
                     }
                 }

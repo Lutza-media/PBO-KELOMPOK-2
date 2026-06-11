@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace sipetra
 {
-    public partial class Beranda : Form
+    public partial class Tiket : Form
     {
 
         public Tiket()
