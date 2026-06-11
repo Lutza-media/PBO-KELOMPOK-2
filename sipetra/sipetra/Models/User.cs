@@ -10,6 +10,7 @@ namespace sipetra.Models
     {
         // Encapsulation: field private
         private string username;
+        private string email;
         private string password;
         private bool isAdmin;
 
@@ -17,6 +18,12 @@ namespace sipetra.Models
         public string Username
         {
             get { return username; }
+            set { username = value; }
+        }
+
+        public string Email
+        {
+            get { return Email; }
             set { username = value; }
         }
         public string Password
@@ -40,10 +47,12 @@ namespace sipetra.Models
         }
 
         // Constructor dengan parameter
-        public User(string username, string password)
+        public User(string username, string  email, string password, bool isAdmin)
         {
             this.username = username;
+            this.email = email;
             this.password = password;
+            this.isAdmin = isAdmin;
 
         }
 
@@ -56,11 +65,12 @@ namespace sipetra.Models
                 {
                     conn.Open();
 
-                    string query = "INSERT INTO users(username, password) VALUES(@username, @password)";
+                    string query = "INSERT INTO users(username, email, password) VALUES(@username, @email, @password)";
 
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@username", Username);
+                        cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.AddWithValue("@password", Password);
                         return cmd.ExecuteNonQuery() > 0;
                     }

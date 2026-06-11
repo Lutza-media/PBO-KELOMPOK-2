@@ -22,5 +22,9 @@ namespace sipetra.Views
         {
             MessageBox.Show("Menu Tiket");
         }
+        private void btnTransaksi_Click(object sender, EventArgs e)
+        {
+            // kode transaksi
+        }
     }
 }

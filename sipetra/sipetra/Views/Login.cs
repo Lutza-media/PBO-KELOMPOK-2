@@ -34,8 +34,8 @@ namespace sipetra.Views
         {
             return new User
             {
-                email = tbEmail.Text.Trim(),
-                katasandi = tbKataSandi.Text.Trim()
+                Username = tbEmail.Text.Trim(),
+                Password = tbKataSandi.Text.Trim()
             };
         }
 
@@ -47,14 +47,14 @@ namespace sipetra.Views
                 return false;
             }
             UserSession.Instance.SetUser(user);
-            MessageBox.Show($"Login berhasil. Selamat datang, {user.nama}!");
+            MessageBox.Show($"Login berhasil. Selamat datang, {user.Username}!");
             return true;
         }
 
         private void RedirectAfterLogin(User user)
         {
 
-            Form next = new sipetra.Views.Beranda(user);
+            Form next = new sipetra.Views.Beranda(user.Username);
             next.Show();
             this.Hide();
         }
@@ -84,7 +84,7 @@ namespace sipetra.Views
             {
                 MessageBox.Show("Login Berhasil");
 
-                Beranda beranda = new Beranda(user);
+                Beranda beranda = new Beranda(user.Username);
                 beranda.Show();
                 this.Hide();
             }

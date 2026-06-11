@@ -88,7 +88,6 @@
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 6;
             btnProfil.UseVisualStyleBackColor = false;
-            btnProfil.Click += btnProfil_Click;
             // 
             // Beranda
             // 

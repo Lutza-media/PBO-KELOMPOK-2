@@ -15,10 +15,10 @@ namespace sipetra.Helpers
                 string query = "INSERT INTO users (nama, email, katasandi, is_admin) VALUES (@Nama, @Email, @Katasandi, @IsAdmin)";
                 using (var cmd = new Npgsql.NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nama", user.nama);
-                    cmd.Parameters.AddWithValue("@Email", user.email);
-                    cmd.Parameters.AddWithValue("@Katasandi", user.katasandi);
-                    cmd.Parameters.AddWithValue("@IsAdmin", user.isAdmin);
+                    cmd.Parameters.AddWithValue("@Nama", user.Username);
+                    cmd.Parameters.AddWithValue("@Email", user.Email);
+                    cmd.Parameters.AddWithValue("@Katasandi", user.Password);
+                    cmd.Parameters.AddWithValue("@IsAdmin", user.IsAdmin);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -44,11 +44,10 @@ namespace sipetra.Helpers
 
                         return new User
                         {
-                            id = reader.GetInt32(reader.GetOrdinal("id")),
-                            nama = reader.GetString(reader.GetOrdinal("nama")),
-                            email = reader.GetString(reader.GetOrdinal("email")),
-                            katasandi = reader.GetString(reader.GetOrdinal("katasandi")),
-                            isAdmin = reader.GetBoolean(reader.GetOrdinal("is_admin"))
+                            Username = reader.GetString(reader.GetOrdinal("nama")),
+                            Email = reader.GetString(reader.GetOrdinal("email")),
+                            Password = reader.GetString(reader.GetOrdinal("katasandi")),
+                            IsAdmin = reader.GetBoolean(reader.GetOrdinal("is_admin"))
                         };
                     }
                 }
