@@ -50,8 +50,8 @@ namespace sipetra
             //this.Hide();
         }
 
-        private void btnPesanTiket1_Click(object sender, EventArgs e)
-        {
+        private void btnPesanTiket1_Click(object sender, EventArgs e) { }
+        /*{
             Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
                 "Tiket Weekday",
                 "Rp7.500 / orang",
@@ -60,19 +60,19 @@ namespace sipetra
 
             formPesan.Show();
             this.Hide();
-        }
+        }*/
 
-        private void btnPesanTiketWeekend_Click(object sender, EventArgs e)
-        {
-            Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
-                "Tiket Weekend",
-                "Rp12.000 / orang",
-                Properties.Resources.weekend // gambar tiket weekend
-            );
+        private void btnPesanTiketWeekend_Click(object sender, EventArgs e) { }
+       // {
+            //Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
+               // "Tiket Weekend",
+                //"Rp12.000 / orang"
+                //Properties.Resources.weekend // gambar tiket weekend
+            //);
 
-            formPesan.Show();
-            this.Hide();
-        }
+            //formPesan.Show();
+            //this.Hide();
+       // }
         private void Tiket_Load_1(object sender, EventArgs e)
         {
 
