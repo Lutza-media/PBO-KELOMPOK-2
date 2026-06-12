@@ -81,16 +81,29 @@ namespace sipetra.Views
 
         private void lblDaftar_Click(object sender, EventArgs e)
         {
-            Register register = new Register();
-
-            register.Show();
-
+            Daftar daftar = new Daftar();
+            daftar.Show();
             this.Hide();
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDaftar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkShow_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

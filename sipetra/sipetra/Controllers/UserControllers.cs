@@ -9,7 +9,7 @@ namespace sipetra.Controllers
         private UserContext context = new UserContext();
         public bool RegisterUser(User user)
         {
-            if (string.IsNullOrWhiteSpace(user.Username))
+            if (string.IsNullOrWhiteSpace(user.Nama))
             {
                 throw new Exception("Username tidak boleh kosong!");
             }

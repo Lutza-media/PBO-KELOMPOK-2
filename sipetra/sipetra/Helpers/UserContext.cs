@@ -15,7 +15,7 @@ namespace sipetra.Helpers
                 string query = "INSERT INTO users (nama, email, katasandi, is_admin) VALUES (@Nama, @Email, @Katasandi, @IsAdmin)";
                 using (var cmd = new Npgsql.NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Nama", user.Username);
+                    cmd.Parameters.AddWithValue("@Nama", user.Nama);
                     cmd.Parameters.AddWithValue("@Email", user.Email);
                     cmd.Parameters.AddWithValue("@Katasandi", user.Password);
                     cmd.Parameters.AddWithValue("@IsAdmin", user.IsAdmin);
@@ -45,7 +45,7 @@ namespace sipetra.Helpers
 
                         return new User
                         {
-                            Username = reader.GetString(reader.GetOrdinal("nama")),
+                            Nama = reader.GetString(reader.GetOrdinal("nama")),
                             Email = reader.GetString(reader.GetOrdinal("email")),
                             Password = reader.GetString(reader.GetOrdinal("katasandi")),
                         };

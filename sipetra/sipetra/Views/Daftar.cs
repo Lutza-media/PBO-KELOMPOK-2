@@ -40,7 +40,7 @@ namespace sipetra.Views
                     return;
                 }
 
-                if (string.IsNullOrWhiteSpace(tbPassword.Text))
+                if (string.IsNullOrWhiteSpace(tbKataSandi.Text))
                 {
                     MessageBox.Show(
                         "Password tidak boleh kosong!",
@@ -48,11 +48,11 @@ namespace sipetra.Views
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
 
-                    tbPassword.Focus();
+                    tbKataSandi.Focus();
                     return;
                 }
 
-                if (tbPassword.Text != tbKonfirmasiPassword.Text)
+                if (tbKataSandi.Text != tbKonfirmasiKataSandi.Text)
                 {
                     MessageBox.Show(
                         "Konfirmasi password tidak sesuai!",
@@ -60,7 +60,7 @@ namespace sipetra.Views
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
 
-                    tbKonfirmasiPassword.Focus();
+                    tbKonfirmasiKataSandi.Focus();
                     return;
                 }
 
@@ -69,7 +69,7 @@ namespace sipetra.Views
 
                 user.Nama = tbNama.Text.Trim();
                 user.Email = tbEmail.Text.Trim();
-                user.Password = tb.Text.Trim();
+                user.Password = tbKataSandi.Text.Trim();
 
                 bool berhasil = user.Register();
 
@@ -124,10 +124,25 @@ namespace sipetra.Views
         {
             tbNama.Clear();
             tbEmail.Clear();
-            tbPassword.Clear();
-            tbKonfirmasiPassword.Clear();
+            tbKataSandi.Clear();
+            tbKonfirmasiKataSandi.Clear();
 
             tbNama.Focus();
+        }
+        private void Daftar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkShow_CheckedChanged(object sender, EventArgs e)
+        {
+            tbKataSandi.UseSystemPasswordChar = !chkShow.Checked;
+            tbKonfirmasiKataSandi.UseSystemPasswordChar = !chkShow.Checked;
         }
     }
 }
