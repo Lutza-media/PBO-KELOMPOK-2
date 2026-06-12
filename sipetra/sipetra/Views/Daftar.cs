@@ -1,128 +1,133 @@
-﻿using sipetra.Controllers;
-using sipetra.Models;
-using sipetra.Helpers;
-using sipetra.Views;
-using System;
+﻿using System;
 using System.Windows.Forms;
-using Npgsql;
-using System.Diagnostics.Eventing.Reader;
+using sipetra.Models;
 
 namespace sipetra.Views
 {
     public partial class Daftar : Form
     {
-        private readonly UserControllers userControllers = new UserControllers();
-
         public Daftar()
         {
             InitializeComponent();
         }
 
-        private void Daftar_Load(object sender, EventArgs e)
-        {
-
-        }
-        private bool ValidateRegistrationInput()
-        {
-            if (string.IsNullOrWhiteSpace(tbNama.Text) ||
-                string.IsNullOrWhiteSpace(tbEmail.Text) ||
-                string.IsNullOrWhiteSpace(tbKataSandi.Text))
-            {
-                MessageBox.Show("Nama, Email, dan Kata Sandi tidak boleh kosong.");
-                return false;
-            }
-
-            else if (!tbEmail.Text.Contains("@") || !tbEmail.Text.Contains("."))
-            {
-                MessageBox.Show("Format email tidak valid.");
-                return false;
-            }
-
-            else if (!tbKataSandi.Text.Any(char.IsDigit))
-            {
-                MessageBox.Show("Kata Sandi harus mengandung angka.");
-                return false;
-            }
-
-            else if (tbKataSandi.Text.Length < 6)
-            {
-                MessageBox.Show("Kata Sandi harus terdiri dari minimal 6 karakter.");
-                return false;
-
-            }
-
-            else if (userControllers.CheckEmail(tbEmail.Text.Trim()))
-            {
-                MessageBox.Show("Email sudah terdaftar. Silakan gunakan email lain.");
-                return false;
-            }
-
-            return true;
-
-        }
-        private void ClearRegisterForm()
-        {
-            tbNama.Text = "";
-            tbEmail.Text = "";
-            tbKataSandi.Text = "";
-        }
-
-        private void HandleRegistrationResult(User newUser)
-        {
-            userControllers.RegisterUser(newUser);
-            MessageBox.Show("Pendaftaran berhasil. Silakan login dengan akun Anda.");
-            ClearRegisterForm();
-        }
-
-        private void RedirectAfterRegistration()
-        {
-            Login form1 = new Login();
-            form1.Show();
-            this.Hide();
-        }
-
         private void btnDaftar_Click(object sender, EventArgs e)
         {
-            User user = new User();
-
-            user.Username = tbEmail.Text.Trim();
-            user.Password = tbKataSandi.Text.Trim();
-
-            UserControllers controller = new UserControllers();
-
-            bool berhasil = controller.RegisterUser(user);
-
-            if (berhasil)
+            try
             {
-                MessageBox.Show("Pendaftaran Berhasil");
+                // Validasi Input
+                if (string.IsNullOrWhiteSpace(tbNama.Text))
+                {
+                    MessageBox.Show(
+                        "Nama tidak boleh kosong!",
+                        "Peringatan",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
 
-                Login login = new Login();
-                login.Show();
-                this.Hide();
+                    tbNama.Focus();
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(tbEmail.Text))
+                {
+                    MessageBox.Show(
+                        "Email tidak boleh kosong!",
+                        "Peringatan",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    tbEmail.Focus();
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(tbPassword.Text))
+                {
+                    MessageBox.Show(
+                        "Password tidak boleh kosong!",
+                        "Peringatan",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    tbPassword.Focus();
+                    return;
+                }
+
+                if (tbPassword.Text != tbKonfirmasiPassword.Text)
+                {
+                    MessageBox.Show(
+                        "Konfirmasi password tidak sesuai!",
+                        "Peringatan",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    tbKonfirmasiPassword.Focus();
+                    return;
+                }
+
+                // Membuat objek User
+                User user = new User();
+
+                user.Nama = tbNama.Text.Trim();
+                user.Email = tbEmail.Text.Trim();
+                user.Password = tb.Text.Trim();
+
+                bool berhasil = user.Register();
+
+                if (berhasil)
+                {
+                    MessageBox.Show(
+                        "Registrasi berhasil!",
+                        "Sukses",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    Login login = new Login();
+
+                    login.Show();
+
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Registrasi gagal!",
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Pendaftaran Gagal");
+                MessageBox.Show(
+                    ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+
+        private void lblLogin_Click(object sender, EventArgs e)
         {
             Login login = new Login();
+
             login.Show();
+
             this.Hide();
         }
 
-        private void chkShow_CheckedChanged(object sender, EventArgs e)
+        private void Daftar_FormClosed(object sender, FormClosedEventArgs e)
         {
-           
-            if (chkShow.Checked == true)
-            {
-              tbKataSandi.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                tbKataSandi.UseSystemPasswordChar = true;
-            }
+            Application.Exit();
+        }
+
+        private void btnBersihkan_Click(object sender, EventArgs e)
+        {
+            tbNama.Clear();
+            tbEmail.Clear();
+            tbPassword.Clear();
+            tbKonfirmasiPassword.Clear();
+
+            tbNama.Focus();
         }
     }
 }

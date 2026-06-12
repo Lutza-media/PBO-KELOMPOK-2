@@ -24,9 +24,9 @@ namespace sipetra.Controllers
 
         public bool Login(User user)
         {
-            if (string.IsNullOrWhiteSpace(user.Username))
+            if (string.IsNullOrWhiteSpace(user.Email))
             {
-                throw new Exception("Username tidak boleh kosong!");
+                throw new Exception("Email tidak boleh kosong!");
             }
 
             if (string.IsNullOrWhiteSpace(user.Password))

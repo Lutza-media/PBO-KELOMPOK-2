@@ -7,6 +7,7 @@ namespace sipetra.Views
     {
         private string username;
 
+
         public Beranda(string username)
         {
             InitializeComponent();

@@ -1,115 +1,180 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System;
 using Npgsql;
+using sipetra.Helpers;
 
 namespace sipetra.Models
 {
     public class User
     {
-        // Encapsulation: field private
-        private string username;
+        // Encapsulated Fields
+        private int id;
+        private string nama;
         private string email;
         private string password;
         private bool isAdmin;
 
-        // Property untuk mengakses field private
-        public string Username
+        // Properties
+        public int Id
         {
-            get { return username; }
-            set { username = value; }
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Nama
+        {
+            get { return nama; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new Exception("Nama tidak boleh kosong.");
+
+                nama = value.Trim();
+            }
         }
 
         public string Email
         {
-            get { return Email; }
-            set { username = value; }
+            get { return email; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new Exception("Email tidak boleh kosong.");
+
+                if (!value.Contains("@"))
+                    throw new Exception("Format email tidak valid.");
+
+                email = value.Trim();
+            }
         }
+
         public string Password
         {
             get { return password; }
-            set { password = value; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new Exception("Password tidak boleh kosong.");
+
+                if (value.Length < 6)
+                    throw new Exception("Password minimal 6 karakter.");
+
+                password = value;
+            }
         }
+
         public bool IsAdmin
         {
             get { return isAdmin; }
-            private set { isAdmin = value; }
+            set { isAdmin = value; }
         }
 
-        // Connection string disembunyikan dari class lain
-        private readonly string connectionString =
-        "Host=localhost;Port=5432;Database=sipetra;Username=postgres;Password=110606";
-
-        // Constructor kosong
+        // Constructor Kosong
         public User()
         {
+
         }
 
-        // Constructor dengan parameter
-        public User(string username, string  email, string password, bool isAdmin)
+        // Constructor Berparameter
+        public User(string nama, string email, string password)
         {
-            this.username = username;
-            this.email = email;
-            this.password = password;
-            this.isAdmin = isAdmin;
-
+            Nama = nama;
+            Email = email;
+            Password = password;
         }
 
         // Method Register
         public bool Register()
         {
-            try
+            using (var conn = DatabaseHelper.GetConnection())
             {
-                using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
+                conn.Open();
+
+                string checkQuery =
+                    "SELECT COUNT(*) FROM users WHERE email=@email";
+
+                using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
                 {
-                    conn.Open();
+                    checkCmd.Parameters.AddWithValue("@email", Email);
 
-                    string query = "INSERT INTO users(username, email, password) VALUES(@username, @email, @password)";
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
 
-                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@username", Username);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@password", Password);
-                        return cmd.ExecuteNonQuery() > 0;
-                    }
+                    if (count > 0)
+                        throw new Exception("Email sudah terdaftar.");
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error Register: " + ex.Message);
-                return false;
+
+                string query = @"
+                    INSERT INTO users
+                    (nama, email, katasandi, is_admin)
+                    VALUES
+                    (@nama, @email, @password, false)";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nama", Nama);
+                    cmd.Parameters.AddWithValue("@email", Email);
+                    cmd.Parameters.AddWithValue("@password", Password);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
         }
 
         // Method Login
         public bool Login()
         {
-            try
+            using (var conn = DatabaseHelper.GetConnection())
             {
-                using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
+                conn.Open();
+
+                string query = @"
+                    SELECT COUNT(*)
+                    FROM users
+                    WHERE email=@email
+                    AND katasandi=@password";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    conn.Open();
+                    cmd.Parameters.AddWithValue("@email", Email);
+                    cmd.Parameters.AddWithValue("@password", Password);
 
-                    string query = "SELECT COUNT(*) FROM users WHERE username=@username AND password=@password";
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                    return count > 0;
+                }
+            }
+        }
+
+        // Mengambil Data User Setelah Login
+        public bool LoadUserData()
+        {
+            using (var conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+
+                string query = @"
+                    SELECT *
+                    FROM users
+                    WHERE email=@email";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@email", Email);
+
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        cmd.Parameters.AddWithValue("@username", Username);
-                        cmd.Parameters.AddWithValue("@password", Password);
-                        cmd.Parameters.AddWithValue("@isAdmin", false);
-                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        if (reader.Read())
+                        {
+                            Id = Convert.ToInt32(reader["id"]);
+                            Nama = reader["nama"].ToString();
+                            IsAdmin = Convert.ToBoolean(reader["is_admin"]);
 
-                        return count > 0;
+                            return true;
+                        }
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error Login: " + ex.Message);
-                return false;
-            }
+
+            return false;
         }
     }
 }
