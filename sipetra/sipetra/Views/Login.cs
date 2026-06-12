@@ -98,12 +98,13 @@ namespace sipetra.Views
 
         private void btnDaftar_Click(object sender, EventArgs e)
         {
-
+            Daftar daftar = new Daftar();
+            daftar.Show();
+            this.Hide();
         }
-
         private void chkShow_CheckedChanged(object sender, EventArgs e)
         {
-
+            tbKataSandi.UseSystemPasswordChar = !chkShow.Checked;
         }
     }
 }
