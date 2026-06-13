@@ -8,20 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sipetra.Views.NewFolder
+namespace sipetra.Views
 {
-    public partial class Pesanan1 : Form
+    public partial class Pembayaran : Form
     {
-        public Pesanan1()
+        public Pembayaran()
         {
             InitializeComponent();
         }
-        private void Pesanan1_Load(object sender, EventArgs e)
+
+        private void Pembayaran_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
 
         }

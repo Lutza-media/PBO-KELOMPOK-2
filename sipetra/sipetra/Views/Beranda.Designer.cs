@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Beranda));
-            button1 = new Button();
+            btnBeranda = new Button();
             btnTiket = new Button();
             btnTransaksi = new Button();
             btnProfil = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnBeranda
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.Location = new Point(46, 363);
-            button1.Name = "button1";
-            button1.Size = new Size(319, 59);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = true;
+            btnBeranda.BackgroundImage = (Image)resources.GetObject("btnBeranda.BackgroundImage");
+            btnBeranda.FlatAppearance.BorderColor = Color.White;
+            btnBeranda.FlatAppearance.BorderSize = 0;
+            btnBeranda.Location = new Point(46, 363);
+            btnBeranda.Name = "btnBeranda";
+            btnBeranda.Size = new Size(319, 59);
+            btnBeranda.TabIndex = 0;
+            btnBeranda.UseVisualStyleBackColor = true;
+            btnBeranda.Click += butBeranda_Click;
             // 
             // btnTiket
             // 
@@ -68,7 +69,7 @@
             btnTransaksi.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             btnTransaksi.FlatAppearance.BorderSize = 0;
             btnTransaksi.FlatStyle = FlatStyle.Flat;
-            btnTransaksi.Location = new Point(46, 541);
+            btnTransaksi.Location = new Point(46, 545);
             btnTransaksi.Name = "btnTransaksi";
             btnTransaksi.Size = new Size(319, 59);
             btnTransaksi.TabIndex = 5;
@@ -82,7 +83,7 @@
             btnProfil.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             btnProfil.FlatAppearance.BorderSize = 0;
             btnProfil.FlatStyle = FlatStyle.Flat;
-            btnProfil.Location = new Point(46, 642);
+            btnProfil.Location = new Point(46, 635);
             btnProfil.Name = "btnProfil";
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 6;
@@ -97,7 +98,7 @@
             Controls.Add(btnProfil);
             Controls.Add(btnTransaksi);
             Controls.Add(btnTiket);
-            Controls.Add(button1);
+            Controls.Add(btnBeranda);
             Name = "Beranda";
             Text = "Beranda";
             Load += Beranda_Load;
@@ -106,7 +107,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnBeranda;
         private Button button2;
         private Button button3;
         private Button button4;

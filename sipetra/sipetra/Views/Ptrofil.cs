@@ -32,7 +32,7 @@ namespace sipetra.Views
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bntProfil_Click(object sender, EventArgs e)
         {
 
         }

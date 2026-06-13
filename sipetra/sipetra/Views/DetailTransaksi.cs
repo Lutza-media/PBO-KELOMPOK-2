@@ -16,5 +16,15 @@ namespace sipetra.Views
         {
             InitializeComponent();
         }
+
+        private void DetailTransaksi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,20 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sipetra.Views.NewFolder
+namespace sipetra.Views
 {
-    public partial class Pesanan1 : Form
+    public partial class Riwayat : Form
     {
-        public Pesanan1()
+        public Riwayat()
         {
             InitializeComponent();
         }
-        private void Pesanan1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnProfil_Click(object sender, EventArgs e)
         {
 
         }

@@ -31,5 +31,10 @@ namespace sipetra.Views
         {
             // kode transaksi
         }
+
+        private void butBeranda_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

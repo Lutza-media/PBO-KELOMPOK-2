@@ -8,15 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sipetra.Views.NewFolder
+namespace sipetra.Views
 {
-    public partial class Pesanan1 : Form
+    public partial class Pesanan2 : Form
     {
-        public Pesanan1()
+        public Pesanan2()
         {
             InitializeComponent();
         }
-        private void Pesanan1_Load(object sender, EventArgs e)
+
+        private void Pesanan2_Load(object sender, EventArgs e)
         {
 
         }

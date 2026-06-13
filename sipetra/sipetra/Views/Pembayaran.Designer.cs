@@ -1,6 +1,6 @@
 ﻿namespace sipetra.Views
 {
-    partial class Ptrofil
+    partial class Pembayaran
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ptrofil));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pembayaran));
             pictureBox1 = new PictureBox();
             btnBack = new Button();
-            button1 = new Button();
+            btnberanda = new Button();
             btnTiket = new Button();
+            btnProfil = new Button();
             btnTransaksi = new Button();
-            bntProfil = new Button();
-            tbEditProfil = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(0, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1513, 979);
+            pictureBox1.Size = new Size(1512, 982);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-
+            pictureBox1.UseWaitCursor = true;
             // 
             // btnBack
             // 
@@ -55,37 +55,47 @@
             btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(497, 35);
+            btnBack.Location = new Point(504, 38);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(71, 69);
-            btnBack.TabIndex = 2;
+            btnBack.Size = new Size(70, 70);
+            btnBack.TabIndex = 15;
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
-            // button1
+            // btnberanda
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(46, 363);
-            button1.Name = "button1";
-            button1.Size = new Size(319, 59);
-            button1.TabIndex = 4;
-            button1.UseVisualStyleBackColor = true;
+            btnberanda.BackgroundImage = (Image)resources.GetObject("btnberanda.BackgroundImage");
+            btnberanda.FlatAppearance.BorderColor = Color.White;
+            btnberanda.FlatAppearance.BorderSize = 0;
+            btnberanda.FlatStyle = FlatStyle.Flat;
+            btnberanda.Location = new Point(46, 363);
+            btnberanda.Name = "btnberanda";
+            btnberanda.Size = new Size(319, 59);
+            btnberanda.TabIndex = 16;
+            btnberanda.UseVisualStyleBackColor = true;
             // 
             // btnTiket
             // 
-            btnTiket.BackColor = Color.PaleGoldenrod;
             btnTiket.BackgroundImage = (Image)resources.GetObject("btnTiket.BackgroundImage");
-            btnTiket.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
+            btnTiket.FlatAppearance.BorderColor = Color.White;
             btnTiket.FlatAppearance.BorderSize = 0;
-            btnTiket.FlatStyle = FlatStyle.Flat;
             btnTiket.Location = new Point(46, 453);
             btnTiket.Name = "btnTiket";
             btnTiket.Size = new Size(319, 59);
-            btnTiket.TabIndex = 7;
-            btnTiket.TextAlign = ContentAlignment.MiddleLeft;
-            btnTiket.UseVisualStyleBackColor = false;
+            btnTiket.TabIndex = 17;
+            btnTiket.UseVisualStyleBackColor = true;
+            // 
+            // btnProfil
+            // 
+            btnProfil.BackgroundImage = (Image)resources.GetObject("btnProfil.BackgroundImage");
+            btnProfil.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 192);
+            btnProfil.FlatAppearance.BorderSize = 0;
+            btnProfil.FlatStyle = FlatStyle.Flat;
+            btnProfil.Location = new Point(46, 635);
+            btnProfil.Name = "btnProfil";
+            btnProfil.Size = new Size(319, 59);
+            btnProfil.TabIndex = 19;
+            btnProfil.UseVisualStyleBackColor = true;
             // 
             // btnTransaksi
             // 
@@ -96,55 +106,35 @@
             btnTransaksi.Location = new Point(46, 545);
             btnTransaksi.Name = "btnTransaksi";
             btnTransaksi.Size = new Size(319, 59);
-            btnTransaksi.TabIndex = 8;
+            btnTransaksi.TabIndex = 20;
             btnTransaksi.UseVisualStyleBackColor = true;
-            btnTransaksi.Click += btnTransaksi_Click;
             // 
-            // bntProfil
-            // 
-            bntProfil.BackgroundImage = (Image)resources.GetObject("bntProfil.BackgroundImage");
-            bntProfil.Location = new Point(46, 632);
-            bntProfil.Name = "bntProfil";
-            bntProfil.Size = new Size(319, 59);
-            bntProfil.TabIndex = 9;
-            bntProfil.UseVisualStyleBackColor = true;
-            // 
-            // tbEditProfil
-            // 
-            tbEditProfil.BackgroundImage = (Image)resources.GetObject("tbEditProfil.BackgroundImage");
-            tbEditProfil.Location = new Point(693, 861);
-            tbEditProfil.Name = "tbEditProfil";
-            tbEditProfil.Size = new Size(211, 51);
-            tbEditProfil.TabIndex = 10;
-            tbEditProfil.UseVisualStyleBackColor = true;
-            tbEditProfil.Click += bntProfil_Click;
-            // 
-            // Ptrofil
+            // Pembayaran
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1511, 977);
-            Controls.Add(tbEditProfil);
-            Controls.Add(bntProfil);
+            ClientSize = new Size(1511, 973);
             Controls.Add(btnTransaksi);
+            Controls.Add(btnProfil);
             Controls.Add(btnTiket);
-            Controls.Add(button1);
+            Controls.Add(btnberanda);
             Controls.Add(btnBack);
             Controls.Add(pictureBox1);
-            Name = "Ptrofil";
-            Text = "V_Ptrofil";
+            Name = "Pembayaran";
+            Text = "Pembayaran";
+            Load += Pembayaran_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
         private Button btnBack;
-        private Button button1;
+        private Button btnberanda;
         private Button btnTiket;
+        private Button btnProfil;
         private Button btnTransaksi;
-        private Button bntProfil;
-        private Button tbEditProfil;
     }
 }

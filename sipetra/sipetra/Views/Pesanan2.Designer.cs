@@ -1,6 +1,6 @@
-﻿namespace sipetra.Views.NewFolder
+﻿namespace sipetra.Views
 {
-    partial class Pesanan1
+    partial class Pesanan2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesanan1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesanan2));
             pictureBox1 = new PictureBox();
-            button1 = new Button();
+            btnBack = new Button();
             btnPembayaran = new Button();
             dateTimePicker2 = new DateTimePicker();
             numericUpDown1 = new NumericUpDown();
-            btnBack = new Button();
+            btnberanda = new Button();
             btnTiket = new Button();
             btnTransaksi = new Button();
             btnProfil = new Button();
@@ -47,21 +47,23 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1513, 979);
+            pictureBox1.Size = new Size(1512, 982);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // button1
+            // btnBack
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(46, 363);
-            button1.Name = "button1";
-            button1.Size = new Size(319, 59);
-            button1.TabIndex = 5;
-            button1.UseVisualStyleBackColor = true;
+            btnBack.BackColor = SystemColors.ButtonHighlight;
+            btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Location = new Point(547, 32);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(70, 70);
+            btnBack.TabIndex = 15;
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // btnPembayaran
             // 
@@ -72,35 +74,34 @@
             btnPembayaran.Location = new Point(1228, 591);
             btnPembayaran.Name = "btnPembayaran";
             btnPembayaran.Size = new Size(158, 44);
-            btnPembayaran.TabIndex = 11;
+            btnPembayaran.TabIndex = 16;
             btnPembayaran.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(798, 529);
+            dateTimePicker2.Location = new Point(805, 526);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(300, 31);
-            dateTimePicker2.TabIndex = 12;
-            dateTimePicker2.ValueChanged += this.dateTimePicker2_ValueChanged;
+            dateTimePicker2.TabIndex = 17;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(798, 604);
+            numericUpDown1.Location = new Point(805, 604);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(180, 31);
-            numericUpDown1.TabIndex = 13;
+            numericUpDown1.TabIndex = 18;
             // 
-            // btnBack
+            // btnberanda
             // 
-            btnBack.BackColor = SystemColors.ButtonHighlight;
-            btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
-            btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(557, 40);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(70, 70);
-            btnBack.TabIndex = 14;
-            btnBack.UseVisualStyleBackColor = false;
+            btnberanda.BackgroundImage = (Image)resources.GetObject("btnberanda.BackgroundImage");
+            btnberanda.FlatAppearance.BorderColor = Color.White;
+            btnberanda.FlatAppearance.BorderSize = 0;
+            btnberanda.FlatStyle = FlatStyle.Flat;
+            btnberanda.Location = new Point(46, 363);
+            btnberanda.Name = "btnberanda";
+            btnberanda.Size = new Size(319, 59);
+            btnberanda.TabIndex = 19;
+            btnberanda.UseVisualStyleBackColor = true;
             // 
             // btnTiket
             // 
@@ -110,7 +111,7 @@
             btnTiket.Location = new Point(46, 453);
             btnTiket.Name = "btnTiket";
             btnTiket.Size = new Size(319, 59);
-            btnTiket.TabIndex = 15;
+            btnTiket.TabIndex = 20;
             btnTiket.UseVisualStyleBackColor = true;
             // 
             // btnTransaksi
@@ -122,7 +123,7 @@
             btnTransaksi.Location = new Point(46, 545);
             btnTransaksi.Name = "btnTransaksi";
             btnTransaksi.Size = new Size(319, 59);
-            btnTransaksi.TabIndex = 16;
+            btnTransaksi.TabIndex = 21;
             btnTransaksi.UseVisualStyleBackColor = true;
             // 
             // btnProfil
@@ -134,39 +135,41 @@
             btnProfil.Location = new Point(46, 635);
             btnProfil.Name = "btnProfil";
             btnProfil.Size = new Size(319, 59);
-            btnProfil.TabIndex = 17;
+            btnProfil.TabIndex = 22;
             btnProfil.UseVisualStyleBackColor = true;
             // 
-            // Pesanan1
+            // Pesanan2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1511, 970);
+            ClientSize = new Size(1511, 978);
             Controls.Add(btnProfil);
             Controls.Add(btnTransaksi);
             Controls.Add(btnTiket);
-            Controls.Add(btnBack);
+            Controls.Add(btnberanda);
             Controls.Add(numericUpDown1);
             Controls.Add(dateTimePicker2);
             Controls.Add(btnPembayaran);
-            Controls.Add(button1);
+            Controls.Add(btnBack);
             Controls.Add(pictureBox1);
-            Name = "Pesanan1";
-            Text = "Pesanan1";
-            Load += this.Pesanan1_Load;
+            Name = "Pesanan2";
+            ShowInTaskbar = false;
+            Text = "Pesanan2";
+            Load += Pesanan2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
-        private Button button1;
+        private Button btnBack;
         private Button btnPembayaran;
         private DateTimePicker dateTimePicker2;
         private NumericUpDown numericUpDown1;
-        private Button btnBack;
+        private Button btnberanda;
         private Button btnTiket;
         private Button btnTransaksi;
         private Button btnProfil;
