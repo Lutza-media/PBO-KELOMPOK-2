@@ -82,6 +82,17 @@ namespace sipetra.Models
             Password = password;
         }
 
+        // Polymorphism
+        public virtual string GetRole()
+        {
+            return "User";
+        }
+
+        public virtual string GetHakAkses()
+        {
+            return "Hak akses umum";
+        }
+
         // Method Register
         public bool Register()
         {
@@ -177,4 +188,8 @@ namespace sipetra.Models
             return false;
         }
     }
+
+
+
+
 }

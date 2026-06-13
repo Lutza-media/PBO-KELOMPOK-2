@@ -138,7 +138,6 @@
         private TextBox tbNama;
         private TextBox tbEmail;
         private TextBox tbKataSandi;
-        private TextBox tbKonfirmasiKataSandi;
         private Button btnDaftar;
         private Label label1;
         private Button btnLogin;

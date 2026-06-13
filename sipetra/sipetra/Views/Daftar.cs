@@ -52,18 +52,6 @@ namespace sipetra.Views
                     return;
                 }
 
-                if (tbKataSandi.Text != tbKonfirmasiKataSandi.Text)
-                {
-                    MessageBox.Show(
-                        "Konfirmasi password tidak sesuai!",
-                        "Peringatan",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    tbKonfirmasiKataSandi.Focus();
-                    return;
-                }
-
                 // Membuat objek User
                 User user = new User();
 
@@ -125,7 +113,6 @@ namespace sipetra.Views
             tbNama.Clear();
             tbEmail.Clear();
             tbKataSandi.Clear();
-            tbKonfirmasiKataSandi.Clear();
 
             tbNama.Focus();
         }
@@ -142,7 +129,6 @@ namespace sipetra.Views
         private void chkShow_CheckedChanged(object sender, EventArgs e)
         {
             tbKataSandi.UseSystemPasswordChar = !chkShow.Checked;
-            tbKonfirmasiKataSandi.UseSystemPasswordChar = !chkShow.Checked;
         }
     }
 }
