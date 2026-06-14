@@ -81,7 +81,6 @@
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(300, 31);
             dateTimePicker2.TabIndex = 12;
-            dateTimePicker2.ValueChanged += this.dateTimePicker2_ValueChanged;
             // 
             // numericUpDown1
             // 
