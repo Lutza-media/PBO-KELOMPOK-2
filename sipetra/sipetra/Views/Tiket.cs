@@ -1,81 +1,75 @@
 ﻿using sipetra.Views;
 using sipetra.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace sipetra
 {
     public partial class Tiket : Form
     {
+        private User _currentUser;
 
         public Tiket()
         {
             InitializeComponent();
-
-            btnPesanTiketWeekend.Click += btnPesanTiketWeekend_Click;
         }
-
-        private User _currentUser;
         public Tiket(User user) : this()
         {
             _currentUser = user;
         }
 
-        private void Tiket_Load(object sender, EventArgs e)
-        {
-        }
-
         private void btnBeranda_Click(object sender, EventArgs e)
         {
-            Beranda beranda = new Beranda();
+            Beranda beranda = new Beranda(_currentUser);  // Kirim user
             beranda.Show();
+            this.Hide();
+        }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            Ptrofil profil = new Ptrofil(_currentUser);  // Kirim user
+            profil.Show();
             this.Hide();
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            Transaksi transaksi = new Transaksi();
+            Transaksi transaksi = new Transaksi(_currentUser);  // Perlu menambahkan constructor ini
             transaksi.Show();
             this.Hide();
         }
-        private void btnProfil_Click(object sender, EventArgs e)
+
+        // Tiket.cs
+        private void btnPesanTiketWeekday_Click(object sender, EventArgs e)
         {
-            //Profil profil = new Profil();
-            //profil.Show();
-            //this.Hide();
+            Views.NewFolder.Pesanan1 pesanan = new Views.NewFolder.Pesanan1();
+            pesanan.Show();
+            this.Hide();
         }
 
-        private void btnPesanTiket1_Click(object sender, EventArgs e) { }
-        /*{
-            Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
-                "Tiket Weekday",
-                "Rp7.500 / orang",
-                Properties.Resources.weekday // gambar tiket weekday
-            );
-
-            formPesan.Show();
+        private void btnPesanTiketWeekend_Click(object sender, EventArgs e)
+        {
+            Views.Pesanan2 pesanan = new Views.Pesanan2();
+            pesanan.Show();
             this.Hide();
-        }*/
+        }
 
-        private void btnPesanTiketWeekend_Click(object sender, EventArgs e) { }
-       // {
-            //Pemesanan_Tiket formPesan = new Pemesanan_Tiket(
-               // "Tiket Weekend",
-                //"Rp12.000 / orang"
-                //Properties.Resources.weekend // gambar tiket weekend
-            //);
+        private void Tiket_Load(object sender, EventArgs e)
+        {
+            // Any initialization code
+        }
 
-            //formPesan.Show();
-            //this.Hide();
-       // }
         private void Tiket_Load_1(object sender, EventArgs e)
         {
-
+            // Kode load jika diperlukan, atau kosongkan saja
         }
+
+        private void btnPesanTiket1_Click(object sender, EventArgs e)
+        {
+            // Panggil method yang sudah ada
+            btnPesanTiketWeekday_Click(sender, e);
+        }
+
+
     }
 }

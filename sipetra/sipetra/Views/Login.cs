@@ -1,16 +1,12 @@
-using Microsoft.Win32;
-using sipetra.Controllers;
-using sipetra.Helpers;
-using sipetra.Models;
-using sipetra.Views;
 using System;
 using System.Windows.Forms;
-
+using sipetra.Models;
 
 namespace sipetra.Views
 {
     public partial class Login : Form
     {
+        private void Login_Load(object sender, EventArgs e) { }
         public Login()
         {
             InitializeComponent();
@@ -22,20 +18,19 @@ namespace sipetra.Views
             {
                 if (string.IsNullOrWhiteSpace(tbEmail.Text))
                 {
-                    MessageBox.Show("Email harus diisi!");
+                    MessageBox.Show("Email harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     tbEmail.Focus();
                     return;
                 }
 
                 if (string.IsNullOrWhiteSpace(tbKataSandi.Text))
                 {
-                    MessageBox.Show("Password harus diisi!");
+                    MessageBox.Show("Password harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     tbKataSandi.Focus();
                     return;
                 }
 
                 User user = new User();
-
                 user.Email = tbEmail.Text.Trim();
                 user.Password = tbKataSandi.Text.Trim();
 
@@ -45,37 +40,20 @@ namespace sipetra.Views
                 {
                     user.LoadUserData();
 
-                    MessageBox.Show(
-                        "Login berhasil!",
-                        "Informasi",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
+                    MessageBox.Show("Login berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    Beranda beranda = new Beranda(user.Nama);
-
+                    Beranda beranda = new Beranda(user);
                     beranda.Show();
-
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show(
-                        "Email atau Password salah!",
-                        "Login Gagal",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
+                    MessageBox.Show("Email atau Password salah!", "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
-                    ex.Message,
-                    "Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -86,25 +64,21 @@ namespace sipetra.Views
             this.Hide();
         }
 
-        private void Login_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDaftar_Click(object sender, EventArgs e)
         {
             Daftar daftar = new Daftar();
             daftar.Show();
             this.Hide();
         }
+
         private void chkShow_CheckedChanged(object sender, EventArgs e)
         {
             tbKataSandi.UseSystemPasswordChar = !chkShow.Checked;
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

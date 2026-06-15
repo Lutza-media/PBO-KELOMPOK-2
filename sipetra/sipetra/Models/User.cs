@@ -135,6 +135,8 @@ namespace sipetra.Models
             }
         }
 
+
+
         // Ambil data lengkap user setelah login (termasuk Id)
         public bool LoadUserData()
         {
@@ -159,7 +161,6 @@ namespace sipetra.Models
             }
             return false;
         }
-
         // Update nama dan email profil
         public bool UpdateProfil(string namaBaru, string emailBaru)
         {

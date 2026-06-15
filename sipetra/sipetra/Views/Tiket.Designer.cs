@@ -98,6 +98,7 @@
             btnPesanTiketWeekday.TabIndex = 6;
             btnPesanTiketWeekday.UseVisualStyleBackColor = false;
             btnPesanTiketWeekday.Click += btnPesanTiket1_Click;
+
             // 
             // btnPesanTiketWeekend
             // 
@@ -111,6 +112,7 @@
             btnPesanTiketWeekend.Size = new Size(158, 44);
             btnPesanTiketWeekend.TabIndex = 7;
             btnPesanTiketWeekend.UseVisualStyleBackColor = false;
+            btnPesanTiketWeekend.Click += btnPesanTiketWeekend_Click;
             // 
             // Tiket
             // 
