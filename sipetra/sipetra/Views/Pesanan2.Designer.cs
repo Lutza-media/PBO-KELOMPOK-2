@@ -2,15 +2,8 @@
 {
     partial class Pesanan2
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +13,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesanan2));
@@ -51,7 +38,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.Click += new EventHandler(pictureBox1_Click);
             // 
             // btnBack
             // 
@@ -64,6 +51,8 @@
             btnBack.Size = new Size(70, 70);
             btnBack.TabIndex = 15;
             btnBack.UseVisualStyleBackColor = false;
+            // TAMBAHKAN event handler:
+            btnBack.Click += new EventHandler(btnBack_Click);
             // 
             // btnPembayaran
             // 
@@ -76,6 +65,8 @@
             btnPembayaran.Size = new Size(158, 44);
             btnPembayaran.TabIndex = 16;
             btnPembayaran.UseVisualStyleBackColor = false;
+            // TAMBAHKAN event handler:
+            btnPembayaran.Click += new EventHandler(btnPembayaran_Click);
             // 
             // dateTimePicker2
             // 
@@ -102,6 +93,8 @@
             btnberanda.Size = new Size(319, 59);
             btnberanda.TabIndex = 19;
             btnberanda.UseVisualStyleBackColor = true;
+            // TAMBAHKAN event handler:
+            btnberanda.Click += new EventHandler(btnBeranda_Click);
             // 
             // btnTiket
             // 
@@ -113,6 +106,8 @@
             btnTiket.Size = new Size(319, 59);
             btnTiket.TabIndex = 20;
             btnTiket.UseVisualStyleBackColor = true;
+            // TAMBAHKAN event handler:
+            btnTiket.Click += new EventHandler(btnTiket_Click);
             // 
             // btnTransaksi
             // 
@@ -125,6 +120,8 @@
             btnTransaksi.Size = new Size(319, 59);
             btnTransaksi.TabIndex = 21;
             btnTransaksi.UseVisualStyleBackColor = true;
+            // TAMBAHKAN event handler:
+            btnTransaksi.Click += new EventHandler(btnTransaksi_Click);
             // 
             // btnProfil
             // 
@@ -137,6 +134,8 @@
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 22;
             btnProfil.UseVisualStyleBackColor = true;
+            // TAMBAHKAN event handler:
+            btnProfil.Click += new EventHandler(btnProfil_Click);
             // 
             // Pesanan2
             // 
@@ -155,14 +154,12 @@
             Name = "Pesanan2";
             ShowInTaskbar = false;
             Text = "Pesanan2";
-            Load += Pesanan2_Load;
+            Load += new EventHandler(Pesanan2_Load);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
 
         private PictureBox pictureBox1;
         private Button btnBack;

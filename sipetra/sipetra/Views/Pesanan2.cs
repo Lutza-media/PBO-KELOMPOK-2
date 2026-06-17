@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Windows.Forms;
 using sipetra.Models;
 
@@ -7,7 +6,6 @@ namespace sipetra.Views
 {
     public partial class Pesanan2 : Form
     {
-        // Pesanan2.cs
         private User _currentUser;
 
         public Pesanan2()
@@ -21,6 +19,7 @@ namespace sipetra.Views
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) { }
+
         private void Pesanan2_Load(object sender, EventArgs e)
         {
             dateTimePicker2.MinDate = DateTime.Now;
@@ -37,35 +36,42 @@ namespace sipetra.Views
             int hargaPerTiket = 12000; // Weekend price
             int totalHarga = jumlahTiket * hargaPerTiket;
 
-            Pembayaran pembayaran = new Pembayaran();
+            Pembayaran pembayaran = new Pembayaran(_currentUser);
             pembayaran.Show();
             this.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Tiket tiket = new Tiket();
+            Tiket tiket = new Tiket(_currentUser);
             tiket.Show();
             this.Hide();
         }
 
         private void btnBeranda_Click(object sender, EventArgs e)
         {
-            Beranda beranda = new Beranda();
+            Beranda beranda = new Beranda(_currentUser);
             beranda.Show();
+            this.Hide();
+        }
+
+        private void btnTiket_Click(object sender, EventArgs e)
+        {
+            Tiket tiket = new Tiket(_currentUser);
+            tiket.Show();
             this.Hide();
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            Transaksi transaksi = new Transaksi();
+            Transaksi transaksi = new Transaksi(_currentUser);
             transaksi.Show();
             this.Hide();
         }
 
         private void btnProfil_Click(object sender, EventArgs e)
         {
-            Profil profil = new Profil();
+            Profil profil = new Profil(_currentUser);
             profil.Show();
             this.Hide();
         }

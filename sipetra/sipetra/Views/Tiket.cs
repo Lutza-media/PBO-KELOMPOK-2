@@ -42,14 +42,14 @@ namespace sipetra
         // Tiket.cs
         private void btnPesanTiketWeekday_Click(object sender, EventArgs e)
         {
-            Views.NewFolder.Pesanan1 pesanan = new Views.NewFolder.Pesanan1();
+            // Kirim user ke Pesanan1
+            Views.NewFolder.Pesanan1 pesanan = new Views.NewFolder.Pesanan1(_currentUser);  // <-- PERBAIKI
             pesanan.Show();
             this.Hide();
         }
-
         private void btnPesanTiketWeekend_Click(object sender, EventArgs e)
         {
-            Views.Pesanan2 pesanan = new Views.Pesanan2();
+            Views.Pesanan2 pesanan = new Views.Pesanan2(_currentUser);  // <-- PERBAIKI
             pesanan.Show();
             this.Hide();
         }
@@ -69,6 +69,7 @@ namespace sipetra
             // Panggil method yang sudah ada
             btnPesanTiketWeekday_Click(sender, e);
         }
+
 
 
     }

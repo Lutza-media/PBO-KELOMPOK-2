@@ -74,6 +74,7 @@
             btnberanda.Size = new Size(319, 59);
             btnberanda.TabIndex = 16;
             btnberanda.UseVisualStyleBackColor = true;
+            btnberanda.Click += new EventHandler(btnBeranda_Click);
             // 
             // btnTiket
             // 
@@ -85,6 +86,7 @@
             btnTiket.Size = new Size(319, 59);
             btnTiket.TabIndex = 17;
             btnTiket.UseVisualStyleBackColor = true;
+            btnTiket.Click += new EventHandler(btnTiket_Click);
             // 
             // btnProfil
             // 
@@ -97,6 +99,7 @@
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 19;
             btnProfil.UseVisualStyleBackColor = true;
+            btnProfil.Click += new EventHandler(btnProfil_Click);
             // 
             // btnTransaksi
             // 
@@ -109,6 +112,7 @@
             btnTransaksi.Size = new Size(319, 59);
             btnTransaksi.TabIndex = 20;
             btnTransaksi.UseVisualStyleBackColor = true;
+            btnTransaksi.Click += new EventHandler(btnTransaksi_Click);
             // 
             // Pembayaran
             // 
