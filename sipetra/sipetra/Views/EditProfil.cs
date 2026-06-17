@@ -65,7 +65,7 @@ namespace sipetra.Views
                 if (berhasil)
                 {
                     MessageBox.Show("Profil berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Ptrofil profil = new Ptrofil(_currentUser);
+                    Profil profil = new Profil(_currentUser);
                     profil.Show();
                     this.Hide();
                 }
@@ -82,14 +82,14 @@ namespace sipetra.Views
 
         private void btnBatalEdit_Click(object sender, EventArgs e)
         {
-            Ptrofil profil = new Ptrofil(_currentUser);
+            Profil profil = new Profil(_currentUser);
             profil.Show();
             this.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Ptrofil profil = new Ptrofil(_currentUser);
+            Profil profil = new Profil(_currentUser);
             profil.Show();
             this.Hide();
         }
@@ -117,7 +117,7 @@ namespace sipetra.Views
 
         private void btnProfil_Click(object sender, EventArgs e)
         {
-            Ptrofil profil = new Ptrofil(_currentUser);
+            Profil profil = new Profil(_currentUser);
             profil.Show();
             this.Hide();
         }

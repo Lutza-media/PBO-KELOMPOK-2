@@ -1,6 +1,6 @@
 ﻿namespace sipetra.Views
 {
-    partial class Ptrofil
+    partial class Profil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ptrofil));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profil));
             pictureBox1 = new PictureBox();
             btnBack = new Button();
             button1 = new Button();

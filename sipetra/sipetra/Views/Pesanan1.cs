@@ -55,7 +55,7 @@ namespace sipetra.Views.NewFolder
 
         private void btnProfil_Click(object sender, EventArgs e)
         {
-            Ptrofil profil = new Ptrofil();
+            Profil profil = new Profil();
             profil.Show();
             this.Hide();
         }

@@ -4,16 +4,16 @@ using sipetra.Models;
 
 namespace sipetra.Views
 {
-    public partial class Ptrofil : Form
+    public partial class Profil : Form
     {
         private User _currentUser;
 
-        public Ptrofil()
+        public Profil()
         {
             InitializeComponent();
         }
 
-        public Ptrofil(User user) : this()
+        public Profil(User user) : this()
         {
             _currentUser = user;
             LoadUserData();

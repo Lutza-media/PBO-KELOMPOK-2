@@ -27,7 +27,7 @@ namespace sipetra
 
         private void btnProfil_Click(object sender, EventArgs e)
         {
-            Ptrofil profil = new Ptrofil(_currentUser);  // Kirim user
+            Profil profil = new Profil(_currentUser);  // Kirim user
             profil.Show();
             this.Hide();
         }
