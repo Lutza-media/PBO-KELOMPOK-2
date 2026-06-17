@@ -51,5 +51,16 @@ namespace sipetra.Views
             btnDetailTransaksi_Click(sender, e);
         }
 
+        private void btnPesanTiketWeekend_Click(object sender, EventArgs e)
+        {
+            Riwayat riwayat = new Riwayat();
+            riwayat.Show();
+            this.Hide();
+        }
+
+        private void btnDataTransaksi_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Anda sedang berada di halaman Data Transaksi");
+        }
     }
 }

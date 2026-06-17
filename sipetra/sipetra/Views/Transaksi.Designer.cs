@@ -50,11 +50,13 @@
             btnBeranda.FlatAppearance.BorderColor = Color.White;
             btnBeranda.FlatAppearance.BorderSize = 0;
             btnBeranda.FlatStyle = FlatStyle.Flat;
-            btnBeranda.Location = new Point(46, 363);
+            btnBeranda.Location = new Point(37, 290);
+            btnBeranda.Margin = new Padding(2);
             btnBeranda.Name = "btnBeranda";
-            btnBeranda.Size = new Size(319, 59);
+            btnBeranda.Size = new Size(255, 47);
             btnBeranda.TabIndex = 2;
             btnBeranda.UseVisualStyleBackColor = true;
+            btnBeranda.Click += btnBeranda_Click;
             // 
             // btnProfil
             // 
@@ -62,18 +64,21 @@
             btnProfil.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 192);
             btnProfil.FlatAppearance.BorderSize = 0;
             btnProfil.FlatStyle = FlatStyle.Flat;
-            btnProfil.Location = new Point(46, 635);
+            btnProfil.Location = new Point(37, 508);
+            btnProfil.Margin = new Padding(2);
             btnProfil.Name = "btnProfil";
-            btnProfil.Size = new Size(319, 59);
+            btnProfil.Size = new Size(255, 47);
             btnProfil.TabIndex = 5;
             btnProfil.UseVisualStyleBackColor = true;
+            btnProfil.Click += btnProfil_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-11, -3);
+            pictureBox1.Location = new Point(-9, -2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1517, 1029);
+            pictureBox1.Size = new Size(1280, 823);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -85,12 +90,14 @@
             btnTiket.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             btnTiket.FlatAppearance.BorderSize = 0;
             btnTiket.FlatStyle = FlatStyle.Flat;
-            btnTiket.Location = new Point(46, 453);
+            btnTiket.Location = new Point(37, 362);
+            btnTiket.Margin = new Padding(2);
             btnTiket.Name = "btnTiket";
-            btnTiket.Size = new Size(319, 59);
+            btnTiket.Size = new Size(255, 47);
             btnTiket.TabIndex = 6;
             btnTiket.TextAlign = ContentAlignment.MiddleLeft;
             btnTiket.UseVisualStyleBackColor = false;
+            btnTiket.Click += btnTiket_Click;
             // 
             // btnTransaksi
             // 
@@ -99,9 +106,10 @@
             btnTransaksi.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             btnTransaksi.FlatAppearance.BorderSize = 0;
             btnTransaksi.FlatStyle = FlatStyle.Flat;
-            btnTransaksi.Location = new Point(46, 545);
+            btnTransaksi.Location = new Point(37, 436);
+            btnTransaksi.Margin = new Padding(2);
             btnTransaksi.Name = "btnTransaksi";
-            btnTransaksi.Size = new Size(319, 59);
+            btnTransaksi.Size = new Size(255, 47);
             btnTransaksi.TabIndex = 7;
             btnTransaksi.TextAlign = ContentAlignment.MiddleLeft;
             btnTransaksi.UseVisualStyleBackColor = false;
@@ -114,9 +122,10 @@
             btnDataTransaksi.FlatAppearance.BorderSize = 0;
             btnDataTransaksi.FlatStyle = FlatStyle.Flat;
             btnDataTransaksi.ForeColor = SystemColors.Control;
-            btnDataTransaksi.Location = new Point(428, 141);
+            btnDataTransaksi.Location = new Point(342, 113);
+            btnDataTransaksi.Margin = new Padding(2);
             btnDataTransaksi.Name = "btnDataTransaksi";
-            btnDataTransaksi.Size = new Size(180, 82);
+            btnDataTransaksi.Size = new Size(144, 66);
             btnDataTransaksi.TabIndex = 8;
             btnDataTransaksi.UseVisualStyleBackColor = false;
             // 
@@ -127,11 +136,13 @@
             btnPesanTiketWeekend.FlatAppearance.BorderSize = 0;
             btnPesanTiketWeekend.FlatStyle = FlatStyle.Flat;
             btnPesanTiketWeekend.ForeColor = SystemColors.Control;
-            btnPesanTiketWeekend.Location = new Point(630, 141);
+            btnPesanTiketWeekend.Location = new Point(504, 113);
+            btnPesanTiketWeekend.Margin = new Padding(2);
             btnPesanTiketWeekend.Name = "btnPesanTiketWeekend";
-            btnPesanTiketWeekend.Size = new Size(216, 79);
+            btnPesanTiketWeekend.Size = new Size(173, 63);
             btnPesanTiketWeekend.TabIndex = 9;
             btnPesanTiketWeekend.UseVisualStyleBackColor = false;
+            btnPesanTiketWeekend.Click += btnPesanTiketWeekend_Click;
             // 
             // btnDatailTransaksi1
             // 
@@ -140,9 +151,10 @@
             btnDatailTransaksi1.FlatAppearance.BorderSize = 0;
             btnDatailTransaksi1.FlatStyle = FlatStyle.Flat;
             btnDatailTransaksi1.ForeColor = SystemColors.Control;
-            btnDatailTransaksi1.Location = new Point(1201, 343);
+            btnDatailTransaksi1.Location = new Point(961, 274);
+            btnDatailTransaksi1.Margin = new Padding(2);
             btnDatailTransaksi1.Name = "btnDatailTransaksi1";
-            btnDatailTransaksi1.Size = new Size(269, 79);
+            btnDatailTransaksi1.Size = new Size(215, 63);
             btnDatailTransaksi1.TabIndex = 10;
             btnDatailTransaksi1.UseVisualStyleBackColor = false;
             btnDatailTransaksi1.Click += button1_Click_1;
@@ -154,11 +166,13 @@
             btnDatailTransaksi2.FlatAppearance.BorderSize = 0;
             btnDatailTransaksi2.FlatStyle = FlatStyle.Flat;
             btnDatailTransaksi2.ForeColor = SystemColors.Control;
-            btnDatailTransaksi2.Location = new Point(1201, 433);
+            btnDatailTransaksi2.Location = new Point(961, 346);
+            btnDatailTransaksi2.Margin = new Padding(2);
             btnDatailTransaksi2.Name = "btnDatailTransaksi2";
-            btnDatailTransaksi2.Size = new Size(269, 79);
+            btnDatailTransaksi2.Size = new Size(215, 63);
             btnDatailTransaksi2.TabIndex = 11;
             btnDatailTransaksi2.UseVisualStyleBackColor = false;
+            btnDatailTransaksi2.Click += button1_Click_1;
             // 
             // btnDatailTransaksi3
             // 
@@ -167,11 +181,13 @@
             btnDatailTransaksi3.FlatAppearance.BorderSize = 0;
             btnDatailTransaksi3.FlatStyle = FlatStyle.Flat;
             btnDatailTransaksi3.ForeColor = SystemColors.Control;
-            btnDatailTransaksi3.Location = new Point(1201, 525);
+            btnDatailTransaksi3.Location = new Point(961, 420);
+            btnDatailTransaksi3.Margin = new Padding(2);
             btnDatailTransaksi3.Name = "btnDatailTransaksi3";
-            btnDatailTransaksi3.Size = new Size(269, 79);
+            btnDatailTransaksi3.Size = new Size(215, 63);
             btnDatailTransaksi3.TabIndex = 12;
             btnDatailTransaksi3.UseVisualStyleBackColor = false;
+            btnDatailTransaksi3.Click += button1_Click_1;
             // 
             // btnDatailTransaksi4
             // 
@@ -180,11 +196,13 @@
             btnDatailTransaksi4.FlatAppearance.BorderSize = 0;
             btnDatailTransaksi4.FlatStyle = FlatStyle.Flat;
             btnDatailTransaksi4.ForeColor = SystemColors.Control;
-            btnDatailTransaksi4.Location = new Point(1201, 625);
+            btnDatailTransaksi4.Location = new Point(961, 500);
+            btnDatailTransaksi4.Margin = new Padding(2);
             btnDatailTransaksi4.Name = "btnDatailTransaksi4";
-            btnDatailTransaksi4.Size = new Size(269, 79);
+            btnDatailTransaksi4.Size = new Size(215, 63);
             btnDatailTransaksi4.TabIndex = 13;
             btnDatailTransaksi4.UseVisualStyleBackColor = false;
+            btnDatailTransaksi4.Click += button1_Click_1;
             // 
             // btnDatailTransaksi5
             // 
@@ -193,17 +211,19 @@
             btnDatailTransaksi5.FlatAppearance.BorderSize = 0;
             btnDatailTransaksi5.FlatStyle = FlatStyle.Flat;
             btnDatailTransaksi5.ForeColor = SystemColors.Control;
-            btnDatailTransaksi5.Location = new Point(1201, 722);
+            btnDatailTransaksi5.Location = new Point(961, 578);
+            btnDatailTransaksi5.Margin = new Padding(2);
             btnDatailTransaksi5.Name = "btnDatailTransaksi5";
-            btnDatailTransaksi5.Size = new Size(269, 79);
+            btnDatailTransaksi5.Size = new Size(215, 63);
             btnDatailTransaksi5.TabIndex = 14;
             btnDatailTransaksi5.UseVisualStyleBackColor = false;
+            btnDatailTransaksi5.Click += button1_Click_1;
             // 
             // Transaksi
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1495, 978);
+            ClientSize = new Size(1196, 782);
             Controls.Add(btnDatailTransaksi5);
             Controls.Add(btnDatailTransaksi4);
             Controls.Add(btnDatailTransaksi3);
@@ -216,6 +236,7 @@
             Controls.Add(btnProfil);
             Controls.Add(btnBeranda);
             Controls.Add(pictureBox1);
+            Margin = new Padding(2);
             Name = "Transaksi";
             Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
