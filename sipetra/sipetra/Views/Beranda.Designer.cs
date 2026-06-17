@@ -83,13 +83,12 @@
             btnProfil.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
             btnProfil.FlatAppearance.BorderSize = 0;
             btnProfil.FlatStyle = FlatStyle.Flat;
-            btnProfil.Location = new Point(46, 635);
+            btnProfil.Location = new Point(46, 635);  // Posisi di bawah Transaksi
             btnProfil.Name = "btnProfil";
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 6;
             btnProfil.UseVisualStyleBackColor = false;
-            btnProfil = new Button();
-            btnProfil.Click += new System.EventHandler(this.btnProfil_Click);
+            btnProfil.Click += new EventHandler(btnProfil_Click);  // Event handler
             // 
             // Beranda
             // 

@@ -84,7 +84,8 @@ namespace sipetra.Views
 
         private void btnProfil_Click(object sender, EventArgs e)
         {
- 
+            Profil profil = new Profil(currentUser);
+            NavigateTo(profil);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
