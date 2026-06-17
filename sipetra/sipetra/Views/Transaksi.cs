@@ -10,6 +10,8 @@ namespace sipetra.Views
         public Transaksi()
         {
             InitializeComponent();
+
+            pictureBox1.SendToBack();
         }
 
         public Transaksi(User user) : this()
@@ -19,21 +21,21 @@ namespace sipetra.Views
 
         private void btnBeranda_Click(object sender, EventArgs e)
         {
-            Beranda beranda = new Beranda();
+            Beranda beranda = new Beranda(_currentUser);
             beranda.Show();
             this.Hide();
         }
 
         private void btnTiket_Click(object sender, EventArgs e)
         {
-            Tiket tiket = new Tiket();
+            Tiket tiket = new Tiket(_currentUser);
             tiket.Show();
             this.Hide();
         }
 
         private void btnProfil_Click(object sender, EventArgs e)
         {
-            Ptrofil profil = new Ptrofil();
+            Ptrofil profil = new Ptrofil(_currentUser);
             profil.Show();
             this.Hide();
         }

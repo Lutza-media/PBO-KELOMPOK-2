@@ -113,7 +113,7 @@
             btnTransaksi.TabIndex = 7;
             btnTransaksi.TextAlign = ContentAlignment.MiddleLeft;
             btnTransaksi.UseVisualStyleBackColor = false;
-            btnTransaksi.Click += button1_Click;
+            btnTransaksi.Click += btnDataTransaksi_Click;
             // 
             // btnDataTransaksi
             // 
@@ -224,18 +224,20 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1196, 782);
-            Controls.Add(btnDatailTransaksi5);
-            Controls.Add(btnDatailTransaksi4);
-            Controls.Add(btnDatailTransaksi3);
-            Controls.Add(btnDatailTransaksi2);
-            Controls.Add(btnDatailTransaksi1);
-            Controls.Add(btnPesanTiketWeekend);
-            Controls.Add(btnDataTransaksi);
-            Controls.Add(btnTransaksi);
-            Controls.Add(btnTiket);
-            Controls.Add(btnProfil);
-            Controls.Add(btnBeranda);
             Controls.Add(pictureBox1);
+
+            Controls.Add(btnBeranda);
+            Controls.Add(btnProfil);
+            Controls.Add(btnTiket);
+            Controls.Add(btnTransaksi);
+            Controls.Add(btnDataTransaksi);
+            Controls.Add(btnPesanTiketWeekend);
+
+            Controls.Add(btnDatailTransaksi1);
+            Controls.Add(btnDatailTransaksi2);
+            Controls.Add(btnDatailTransaksi3);
+            Controls.Add(btnDatailTransaksi4);
+            Controls.Add(btnDatailTransaksi5);
             Margin = new Padding(2);
             Name = "Transaksi";
             Text = "Form5";
