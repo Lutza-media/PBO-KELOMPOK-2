@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\detailtransaksi5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\detailtransaksi5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\detailtransaksi4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\detailtransaksi4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\detailtransaksi3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\detailtransaksi3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\detailtransaksi2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\detailtransaksi2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\detailtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\detailtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\daftar.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\daftar.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\helpers\\iformnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\helpers\\iformnavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\profil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\profil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\helpers\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\views\\pesanan2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,20 +143,12 @@
       "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\profil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\detailtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\detailtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\editprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\editprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\daftar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\daftar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|solutionrelative:sipetra\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D17431E-E174-D265-D48B-2D5CAFECF013}|sipetra\\sipetra.csproj|c:\\users\\admin\\source\\repos\\pbo-kelompok-2\\sipetra\\sipetra\\helpers\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,7 +170,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -166,58 +186,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Riwayat.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Riwayat.cs",
-              "RelativeDocumentMoniker": "sipetra\\Views\\Riwayat.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Riwayat.cs",
-              "RelativeToolTip": "sipetra\\Views\\Riwayat.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwBQAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DetailTransaksi3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi3.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi3.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi3.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T08:52:28.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T11:01:35.018Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DetailTransaksi.cs",
+              "Title": "DetailTransaksi4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi4.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi4.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi4.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T11:02:05.326Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetailTransaksi5.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi5.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi5.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi5.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T11:02:39.852Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetailTransaksi2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi2.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi2.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi2.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T11:01:11.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetailTransaksi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.cs",
-              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T08:48:40.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T05:56:21.974Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DetailTransaksi.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.Designer.cs",
-              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi.Designer.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.Designer.cs",
-              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi.Designer.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAAAJsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T08:44:41.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Tiket.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Tiket.cs",
-              "RelativeDocumentMoniker": "sipetra\\Views\\Tiket.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Tiket.cs",
-              "RelativeToolTip": "sipetra\\Views\\Tiket.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAywEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T05:52:48.393Z",
+              "Title": "Daftar.resx",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Daftar.resx",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Daftar.resx",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Daftar.resx",
+              "RelativeToolTip": "sipetra\\Views\\Daftar.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-06-17T11:22:10.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "Pesanan2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pesanan2.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pesanan2.cs",
@@ -228,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "IFormNavigator.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\IFormNavigator.cs",
               "RelativeDocumentMoniker": "sipetra\\Helpers\\IFormNavigator.cs",
@@ -241,7 +282,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "sipetra\\Helpers\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\DatabaseHelper.cs",
+              "RelativeToolTip": "sipetra\\Helpers\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T05:43:35.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Login.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Login.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Login.cs [Design]",
+              "RelativeToolTip": "sipetra\\Views\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T05:56:13.217Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Tiket.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Tiket.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Tiket.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Tiket.cs",
+              "RelativeToolTip": "sipetra\\Views\\Tiket.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAywEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T05:52:48.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DetailTransaksi.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.Designer.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.Designer.cs",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAIBJwJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T08:44:41.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetailTransaksi.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.cs",
+              "RelativeToolTip": "sipetra\\Views\\DetailTransaksi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T08:48:40.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Riwayat.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Riwayat.cs",
+              "RelativeDocumentMoniker": "sipetra\\Views\\Riwayat.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Riwayat.cs",
+              "RelativeToolTip": "sipetra\\Views\\Riwayat.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwBQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T08:52:28.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Riwayat.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Riwayat.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Riwayat.Designer.cs",
@@ -253,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Pesanan2.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pesanan2.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pesanan2.cs",
@@ -265,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Transaksi.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Transaksi.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Transaksi.cs",
@@ -278,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "Beranda.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Beranda.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Beranda.Designer.cs",
@@ -290,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "Pesanan1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pesanan1.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pesanan1.Designer.cs",
@@ -302,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Beranda.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Beranda.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Beranda.cs",
@@ -315,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Profil.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Profil.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Profil.Designer.cs",
@@ -327,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Tiket.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Tiket.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Tiket.Designer.cs",
@@ -339,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "EditProfil.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\EditProfil.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\EditProfil.Designer.cs",
@@ -351,19 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "sipetra\\Helpers\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\DatabaseHelper.cs",
-              "RelativeToolTip": "sipetra\\Helpers\\DatabaseHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAB4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T05:43:35.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Profil.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Profil.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Profil.cs",
@@ -376,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "EditProfil.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\EditProfil.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\EditProfil.cs",
@@ -389,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Pesanan2.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pesanan2.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pesanan2.Designer.cs",
@@ -401,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "Tiket.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Tiket.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Tiket.cs",
@@ -411,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Pesanan1.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pesanan1.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pesanan1.cs",
@@ -424,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Pembayaran.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pembayaran.Designer.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pembayaran.Designer.cs",
@@ -436,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "Pembayaran.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pembayaran.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pembayaran.cs",
@@ -448,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "Transaksi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Transaksi.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Transaksi.cs",
@@ -458,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "Pesanan1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Pesanan1.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Pesanan1.cs",
@@ -469,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "Riwayat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Riwayat.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Riwayat.cs",
@@ -479,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "Beranda.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Beranda.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Beranda.cs",
@@ -490,17 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "DetailTransaksi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\DetailTransaksi.cs",
-              "RelativeDocumentMoniker": "sipetra\\Views\\DetailTransaksi.cs",
-              "ToolTip": "D:\\PBO1\\sipetra\\sipetra\\Views\\DetailTransaksi.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T05:56:21.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "Daftar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Daftar.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Daftar.cs",
@@ -511,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "Profil.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Profil.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\Profil.cs",
@@ -521,18 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Login.cs",
-              "RelativeDocumentMoniker": "sipetra\\Views\\Login.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\Login.cs [Design]",
-              "RelativeToolTip": "sipetra\\Views\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T05:56:13.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "EditProfil.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Views\\EditProfil.cs",
               "RelativeDocumentMoniker": "sipetra\\Views\\EditProfil.cs",
@@ -542,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\UserSession.cs",
               "RelativeDocumentMoniker": "sipetra\\Helpers\\UserSession.cs",
@@ -554,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "UserContext.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Helpers\\UserContext.cs",
               "RelativeDocumentMoniker": "sipetra\\Helpers\\UserContext.cs",
@@ -566,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "UserControllers.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\PBO-KELOMPOK-2\\sipetra\\sipetra\\Controllers\\UserControllers.cs",
               "RelativeDocumentMoniker": "sipetra\\Controllers\\UserControllers.cs",
