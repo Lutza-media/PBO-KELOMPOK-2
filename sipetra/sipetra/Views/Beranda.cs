@@ -78,7 +78,7 @@ namespace sipetra.Views
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            Transaksi transaksi = new Transaksi();
+            Transaksi transaksi = new Transaksi(currentUser);
             NavigateTo(transaksi);
         }
 

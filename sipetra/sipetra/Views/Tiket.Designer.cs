@@ -60,6 +60,7 @@
             btnTiket.Size = new Size(319, 59);
             btnTiket.TabIndex = 2;
             btnTiket.UseVisualStyleBackColor = true;
+
             // 
             // btnTransaksi
             // 
@@ -72,6 +73,7 @@
             btnTransaksi.Size = new Size(319, 59);
             btnTransaksi.TabIndex = 3;
             btnTransaksi.UseVisualStyleBackColor = true;
+            btnTransaksi.Click += btnTransaksi_Click;
             // 
             // btnProfil
             // 
@@ -84,6 +86,7 @@
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 4;
             btnProfil.UseVisualStyleBackColor = true;
+            btnProfil.Click += btnProfil_Click;
             // 
             // btnPesanTiketWeekday
             // 

@@ -60,6 +60,7 @@
             btnBack.Size = new Size(71, 69);
             btnBack.TabIndex = 2;
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // button1
             // 
@@ -72,6 +73,7 @@
             button1.Size = new Size(319, 59);
             button1.TabIndex = 4;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += btnBeranda_Click;
             // 
             // btnTiket
             // 
@@ -86,6 +88,7 @@
             btnTiket.TabIndex = 7;
             btnTiket.TextAlign = ContentAlignment.MiddleLeft;
             btnTiket.UseVisualStyleBackColor = false;
+            btnTiket.Click += btnTiket_Click;
             // 
             // btnTransaksi
             // 
@@ -108,6 +111,7 @@
             bntProfil.Size = new Size(319, 59);
             bntProfil.TabIndex = 9;
             bntProfil.UseVisualStyleBackColor = true;
+            bntProfil.Click += bntProfil_Click;
             // 
             // tbEditProfil
             // 

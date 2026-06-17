@@ -11,23 +11,24 @@ namespace sipetra.Views
         public EditProfil()
         {
             InitializeComponent();
-            LoadUserData();
         }
 
         public EditProfil(User user) : this()
         {
             _currentUser = user;
+            LoadUserData();
         }
 
         private void LoadUserData()
         {
-            User user = new User();
-            if (user.LoadUserData())
+            if (_currentUser == null)
             {
-                btnNamaLengkap.Text = user.Nama;
-                btnEmailEdit.Text = user.Email;
-                _currentUser = user;
+                MessageBox.Show("Data user tidak ditemukan!");
+                return;
             }
+
+            btnNamaLengkap.Text = _currentUser.Nama;
+            btnEmailEdit.Text = _currentUser.Email;
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -110,7 +111,7 @@ namespace sipetra.Views
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            Transaksi transaksi = new Transaksi();
+            Transaksi transaksi = new Transaksi(_currentUser);
             transaksi.Show();
             this.Hide();
         }

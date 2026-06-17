@@ -42,7 +42,7 @@ namespace sipetra.Views
 
         private void btnDetailTransaksi_Click(object sender, EventArgs e)
         {
-            DetailTransaksi detail = new DetailTransaksi();
+            DetailTransaksi detail = new DetailTransaksi(_currentUser);
             detail.Show();
             this.Hide();
         }
@@ -55,7 +55,7 @@ namespace sipetra.Views
 
         private void btnPesanTiketWeekend_Click(object sender, EventArgs e)
         {
-            Riwayat riwayat = new Riwayat();
+            Riwayat riwayat = new Riwayat(_currentUser);
             riwayat.Show();
             this.Hide();
         }

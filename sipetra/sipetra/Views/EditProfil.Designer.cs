@@ -138,6 +138,7 @@
             btnBatalEdit.Size = new Size(200, 44);
             btnBatalEdit.TabIndex = 26;
             btnBatalEdit.UseVisualStyleBackColor = false;
+            btnBatalEdit.Click += btnBatalEdit_Click;
             // 
             // btnSimpan
             // 
@@ -150,6 +151,7 @@
             btnSimpan.Size = new Size(200, 44);
             btnSimpan.TabIndex = 27;
             btnSimpan.UseVisualStyleBackColor = false;
+            btnSimpan.Click += btnSimpan_Click;
             // 
             // bntProfil
             // 

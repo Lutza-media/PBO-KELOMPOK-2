@@ -47,6 +47,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+     
             // 
             // btnBack
             // 
@@ -59,6 +60,7 @@
             btnBack.Size = new Size(70, 70);
             btnBack.TabIndex = 16;
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // btnBeranda
             // 
@@ -71,6 +73,7 @@
             btnBeranda.Size = new Size(319, 59);
             btnBeranda.TabIndex = 17;
             btnBeranda.UseVisualStyleBackColor = true;
+            btnBeranda.Click += btnBeranda_Click;
             // 
             // btnProfil
             // 
@@ -98,6 +101,7 @@
             btnTransaksi.TabIndex = 19;
             btnTransaksi.TextAlign = ContentAlignment.MiddleLeft;
             btnTransaksi.UseVisualStyleBackColor = false;
+            btnTransaksi.Click += btnTransaksi_Click;
             // 
             // btnTiket
             // 
@@ -112,6 +116,7 @@
             btnTiket.TabIndex = 20;
             btnTiket.TextAlign = ContentAlignment.MiddleLeft;
             btnTiket.UseVisualStyleBackColor = false;
+            btnTiket.Click += btnTiket_Click;
             // 
             // Riwayat
             // 

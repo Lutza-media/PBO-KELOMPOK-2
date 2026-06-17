@@ -70,6 +70,7 @@
             btnBack.Size = new Size(70, 70);
             btnBack.TabIndex = 15;
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // btnberanda
             // 

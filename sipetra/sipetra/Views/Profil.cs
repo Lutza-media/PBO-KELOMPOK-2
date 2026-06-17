@@ -16,7 +16,11 @@ namespace sipetra.Views
         public Profil(User user) : this()
         {
             _currentUser = user;
-            LoadUserData();
+
+            if (_currentUser != null)
+            {
+                LoadUserData();
+            }
         }
 
         private void LoadUserData()
