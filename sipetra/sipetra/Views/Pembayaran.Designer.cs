@@ -35,6 +35,10 @@
             btnTiket = new Button();
             btnProfil = new Button();
             btnTransaksi = new Button();
+            tbJenisTiket = new TextBox();
+            tbHargaSatuan = new TextBox();
+            btTotalHarga = new TextBox();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -74,7 +78,7 @@
             btnberanda.Size = new Size(319, 59);
             btnberanda.TabIndex = 16;
             btnberanda.UseVisualStyleBackColor = true;
-            btnberanda.Click += new EventHandler(btnBeranda_Click);
+            btnberanda.Click += btnBeranda_Click;
             // 
             // btnTiket
             // 
@@ -86,7 +90,7 @@
             btnTiket.Size = new Size(319, 59);
             btnTiket.TabIndex = 17;
             btnTiket.UseVisualStyleBackColor = true;
-            btnTiket.Click += new EventHandler(btnTiket_Click);
+            btnTiket.Click += btnTiket_Click;
             // 
             // btnProfil
             // 
@@ -99,7 +103,7 @@
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 19;
             btnProfil.UseVisualStyleBackColor = true;
-            btnProfil.Click += new EventHandler(btnProfil_Click);
+            btnProfil.Click += btnProfil_Click;
             // 
             // btnTransaksi
             // 
@@ -112,13 +116,50 @@
             btnTransaksi.Size = new Size(319, 59);
             btnTransaksi.TabIndex = 20;
             btnTransaksi.UseVisualStyleBackColor = true;
-            btnTransaksi.Click += new EventHandler(btnTransaksi_Click);
+            btnTransaksi.Click += btnTransaksi_Click;
+            // 
+            // tbJenisTiket
+            // 
+            tbJenisTiket.BorderStyle = BorderStyle.None;
+            tbJenisTiket.Location = new Point(694, 228);
+            tbJenisTiket.Name = "tbJenisTiket";
+            tbJenisTiket.Size = new Size(218, 24);
+            tbJenisTiket.TabIndex = 24;
+            tbJenisTiket.TextChanged += tbEmail_TextChanged;
+            // 
+            // tbHargaSatuan
+            // 
+            tbHargaSatuan.BorderStyle = BorderStyle.None;
+            tbHargaSatuan.Location = new Point(694, 324);
+            tbHargaSatuan.Name = "tbHargaSatuan";
+            tbHargaSatuan.Size = new Size(218, 24);
+            tbHargaSatuan.TabIndex = 25;
+            // 
+            // btTotalHarga
+            // 
+            btTotalHarga.BorderStyle = BorderStyle.None;
+            btTotalHarga.Location = new Point(656, 427);
+            btTotalHarga.Name = "btTotalHarga";
+            btTotalHarga.Size = new Size(218, 24);
+            btTotalHarga.TabIndex = 26;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(694, 276);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(218, 24);
+            textBox1.TabIndex = 27;
             // 
             // Pembayaran
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1511, 973);
+            Controls.Add(textBox1);
+            Controls.Add(btTotalHarga);
+            Controls.Add(tbHargaSatuan);
+            Controls.Add(tbJenisTiket);
             Controls.Add(btnTransaksi);
             Controls.Add(btnProfil);
             Controls.Add(btnTiket);
@@ -141,5 +182,10 @@
         private Button btnTiket;
         private Button btnProfil;
         private Button btnTransaksi;
+        private NumericUpDown numericUpDown3;
+        private TextBox tbJenisTiket;
+        private TextBox tbHargaSatuan;
+        private TextBox btTotalHarga;
+        private TextBox textBox1;
     }
 }

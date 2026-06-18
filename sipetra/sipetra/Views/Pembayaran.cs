@@ -56,5 +56,15 @@ namespace sipetra.Views
             profil.Show();
             this.Hide();
         }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
