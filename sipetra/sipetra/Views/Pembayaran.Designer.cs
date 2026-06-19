@@ -2,15 +2,8 @@
 {
     partial class Pembayaran
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +13,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pembayaran));
@@ -38,7 +25,8 @@
             tbJenisTiket = new TextBox();
             tbHargaSatuan = new TextBox();
             btTotalHarga = new TextBox();
-            textBox1 = new TextBox();
+            tbJumlahTiket = new TextBox();
+            btnKonfirmasiPembayaran = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +40,7 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.UseWaitCursor = true;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // btnBack
             // 
@@ -120,43 +108,66 @@
             // 
             // tbJenisTiket
             // 
+            tbJenisTiket.BackColor = Color.White;
             tbJenisTiket.BorderStyle = BorderStyle.None;
             tbJenisTiket.Location = new Point(694, 228);
             tbJenisTiket.Name = "tbJenisTiket";
+            tbJenisTiket.ReadOnly = true;
             tbJenisTiket.Size = new Size(218, 24);
             tbJenisTiket.TabIndex = 24;
-            tbJenisTiket.TextChanged += tbEmail_TextChanged;
             // 
             // tbHargaSatuan
             // 
+            tbHargaSatuan.BackColor = Color.White;
             tbHargaSatuan.BorderStyle = BorderStyle.None;
             tbHargaSatuan.Location = new Point(694, 324);
             tbHargaSatuan.Name = "tbHargaSatuan";
+            tbHargaSatuan.ReadOnly = true;
             tbHargaSatuan.Size = new Size(218, 24);
             tbHargaSatuan.TabIndex = 25;
             // 
             // btTotalHarga
             // 
+            btTotalHarga.BackColor = Color.White;
             btTotalHarga.BorderStyle = BorderStyle.None;
+            btTotalHarga.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btTotalHarga.ForeColor = Color.Green;
             btTotalHarga.Location = new Point(656, 427);
             btTotalHarga.Name = "btTotalHarga";
-            btTotalHarga.Size = new Size(218, 24);
+            btTotalHarga.ReadOnly = true;
+            btTotalHarga.Size = new Size(218, 32);
             btTotalHarga.TabIndex = 26;
             // 
-            // textBox1
+            // tbJumlahTiket
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(694, 276);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(218, 24);
-            textBox1.TabIndex = 27;
+            tbJumlahTiket.BackColor = Color.White;
+            tbJumlahTiket.BorderStyle = BorderStyle.None;
+            tbJumlahTiket.Location = new Point(694, 276);
+            tbJumlahTiket.Name = "tbJumlahTiket";
+            tbJumlahTiket.ReadOnly = true;
+            tbJumlahTiket.Size = new Size(218, 24);
+            tbJumlahTiket.TabIndex = 27;
+            // 
+            // btnKonfirmasiPembayaran
+            // 
+            btnKonfirmasiPembayaran.BackColor = SystemColors.ButtonHighlight;
+            btnKonfirmasiPembayaran.BackgroundImage = (Image)resources.GetObject("btnKonfirmasiPembayaran.BackgroundImage");
+            btnKonfirmasiPembayaran.FlatAppearance.BorderSize = 0;
+            btnKonfirmasiPembayaran.FlatStyle = FlatStyle.Flat;
+            btnKonfirmasiPembayaran.Location = new Point(1248, 873);
+            btnKonfirmasiPembayaran.Name = "btnKonfirmasiPembayaran";
+            btnKonfirmasiPembayaran.Size = new Size(158, 44);
+            btnKonfirmasiPembayaran.TabIndex = 28;
+            btnKonfirmasiPembayaran.UseVisualStyleBackColor = false;
+            btnKonfirmasiPembayaran.Click += btnKonfirmasiPembayaran_Click;
             // 
             // Pembayaran
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1511, 973);
-            Controls.Add(textBox1);
+            Controls.Add(btnKonfirmasiPembayaran);
+            Controls.Add(tbJumlahTiket);
             Controls.Add(btTotalHarga);
             Controls.Add(tbHargaSatuan);
             Controls.Add(tbJenisTiket);
@@ -174,7 +185,6 @@
             PerformLayout();
         }
 
-        #endregion
 
         private PictureBox pictureBox1;
         private Button btnBack;
@@ -182,10 +192,10 @@
         private Button btnTiket;
         private Button btnProfil;
         private Button btnTransaksi;
-        private NumericUpDown numericUpDown3;
         private TextBox tbJenisTiket;
         private TextBox tbHargaSatuan;
         private TextBox btTotalHarga;
-        private TextBox textBox1;
+        private TextBox tbJumlahTiket;
+        private Button btnKonfirmasiPembayaran;
     }
 }

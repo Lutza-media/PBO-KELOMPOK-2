@@ -18,8 +18,6 @@ namespace sipetra.Views
             _currentUser = user;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e) { }
-
         private void Pesanan2_Load(object sender, EventArgs e)
         {
             dateTimePicker2.MinDate = DateTime.Now;
@@ -29,14 +27,16 @@ namespace sipetra.Views
             numericUpDown1.Value = 1;
         }
 
+        // KETIKA KLIK "LANJUTKAN PEMBAYARAN" - KIRIM DATA KE PEMBAYARAN
         private void btnPembayaran_Click(object sender, EventArgs e)
         {
             int jumlahTiket = (int)numericUpDown1.Value;
             DateTime tanggalKunjungan = dateTimePicker2.Value;
             int hargaPerTiket = 12000; // Weekend price
-            int totalHarga = jumlahTiket * hargaPerTiket;
+            string jenisTiket = "Weekend";
 
-            Pembayaran pembayaran = new Pembayaran(_currentUser);
+            // Kirim data ke form Pembayaran
+            Pembayaran pembayaran = new Pembayaran(_currentUser, jenisTiket, jumlahTiket, hargaPerTiket);
             pembayaran.Show();
             this.Hide();
         }
@@ -75,5 +75,7 @@ namespace sipetra.Views
             profil.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e) { }
     }
 }
