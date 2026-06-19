@@ -64,6 +64,7 @@
             btnProfil.Size = new Size(319, 59);
             btnProfil.TabIndex = 46;
             btnProfil.UseVisualStyleBackColor = true;
+            btnProfil.Click += btnProfil_Click;
             // 
             // btnTransaksi
             // 
@@ -94,6 +95,7 @@
             btnTiket.TabIndex = 44;
             btnTiket.TextAlign = ContentAlignment.MiddleLeft;
             btnTiket.UseVisualStyleBackColor = false;
+            btnTiket.Click += btnTiket_Click;
             // 
             // btnBeranda
             // 
@@ -107,6 +109,7 @@
             btnBeranda.Size = new Size(319, 59);
             btnBeranda.TabIndex = 43;
             btnBeranda.UseVisualStyleBackColor = true;
+            btnBeranda.Click += btnBeranda_Click;
             // 
             // btnRiwayatTransaksi
             // 

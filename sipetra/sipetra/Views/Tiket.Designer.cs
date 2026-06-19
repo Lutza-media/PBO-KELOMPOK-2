@@ -1,4 +1,6 @@
-﻿namespace sipetra
+﻿using sipetra.Views;
+
+namespace sipetra
 {
     partial class Tiket
     {
@@ -60,6 +62,7 @@
             btnTiket.Size = new Size(319, 59);
             btnTiket.TabIndex = 2;
             btnTiket.UseVisualStyleBackColor = true;
+ 
 
             // 
             // btnTransaksi

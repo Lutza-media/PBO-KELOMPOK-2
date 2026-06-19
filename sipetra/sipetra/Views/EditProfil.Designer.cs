@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfil));
             pictureBox2 = new PictureBox();
             button1 = new Button();
-            btnEmailEdit = new TextBox();
+            btnEmail = new TextBox();
             btnNamaLengkap = new TextBox();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
+            btnBeranda = new Button();
+            btnTiket = new Button();
+            btnTransaksi = new Button();
+            btnProfil = new Button();
+            btnBatal = new Button();
+            btnSimpan = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -63,17 +63,16 @@
             button1.Size = new Size(70, 70);
             button1.TabIndex = 31;
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
-            // btnEmailEdit
+            // btnEmail
             // 
-            btnEmailEdit.BackColor = Color.White;
-            btnEmailEdit.BorderStyle = BorderStyle.FixedSingle;
-            btnEmailEdit.Location = new Point(659, 582);
-            btnEmailEdit.Name = "btnEmailEdit";
-            btnEmailEdit.Size = new Size(273, 31);
-            btnEmailEdit.TabIndex = 32;
-            btnEmailEdit.UseWaitCursor = true;
+            btnEmail.BackColor = Color.White;
+            btnEmail.BorderStyle = BorderStyle.FixedSingle;
+            btnEmail.Location = new Point(659, 582);
+            btnEmail.Name = "btnEmail";
+            btnEmail.Size = new Size(273, 31);
+            btnEmail.TabIndex = 32;
+            btnEmail.UseWaitCursor = true;
             // 
             // btnNamaLengkap
             // 
@@ -84,92 +83,97 @@
             btnNamaLengkap.Size = new Size(273, 31);
             btnNamaLengkap.TabIndex = 33;
             // 
-            // button2
+            // btnBeranda
             // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.FlatAppearance.BorderColor = Color.White;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(46, 359);
-            button2.Name = "button2";
-            button2.Size = new Size(319, 59);
-            button2.TabIndex = 34;
-            button2.UseVisualStyleBackColor = true;
+            btnBeranda.BackgroundImage = (Image)resources.GetObject("btnBeranda.BackgroundImage");
+            btnBeranda.FlatAppearance.BorderColor = Color.White;
+            btnBeranda.FlatAppearance.BorderSize = 0;
+            btnBeranda.FlatStyle = FlatStyle.Flat;
+            btnBeranda.Location = new Point(46, 359);
+            btnBeranda.Name = "btnBeranda";
+            btnBeranda.Size = new Size(319, 59);
+            btnBeranda.TabIndex = 34;
+            btnBeranda.UseVisualStyleBackColor = true;
+            btnBeranda.Click += btnBeranda_Click;
             // 
-            // button3
+            // btnTiket
             // 
-            button3.BackColor = Color.PaleGoldenrod;
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(46, 453);
-            button3.Name = "button3";
-            button3.Size = new Size(319, 59);
-            button3.TabIndex = 35;
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
+            btnTiket.BackColor = Color.PaleGoldenrod;
+            btnTiket.BackgroundImage = (Image)resources.GetObject("btnTiket.BackgroundImage");
+            btnTiket.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
+            btnTiket.FlatAppearance.BorderSize = 0;
+            btnTiket.FlatStyle = FlatStyle.Flat;
+            btnTiket.Location = new Point(46, 453);
+            btnTiket.Name = "btnTiket";
+            btnTiket.Size = new Size(319, 59);
+            btnTiket.TabIndex = 35;
+            btnTiket.TextAlign = ContentAlignment.MiddleLeft;
+            btnTiket.UseVisualStyleBackColor = false;
+            btnTiket.Click += btnTiket_Click;
             // 
-            // button4
+            // btnTransaksi
             // 
-            button4.BackColor = Color.PaleGoldenrod;
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(46, 545);
-            button4.Name = "button4";
-            button4.Size = new Size(319, 59);
-            button4.TabIndex = 36;
-            button4.UseVisualStyleBackColor = false;
+            btnTransaksi.BackColor = Color.PaleGoldenrod;
+            btnTransaksi.BackgroundImage = (Image)resources.GetObject("btnTransaksi.BackgroundImage");
+            btnTransaksi.FlatAppearance.BorderColor = Color.FromArgb(255, 192, 255);
+            btnTransaksi.FlatAppearance.BorderSize = 0;
+            btnTransaksi.FlatStyle = FlatStyle.Flat;
+            btnTransaksi.Location = new Point(46, 545);
+            btnTransaksi.Name = "btnTransaksi";
+            btnTransaksi.Size = new Size(319, 59);
+            btnTransaksi.TabIndex = 36;
+            btnTransaksi.UseVisualStyleBackColor = false;
+            btnTransaksi.Click += btnTransaksi_Click;
             // 
-            // button5
+            // btnProfil
             // 
-            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
-            button5.Location = new Point(46, 635);
-            button5.Name = "button5";
-            button5.Size = new Size(319, 59);
-            button5.TabIndex = 37;
-            button5.UseVisualStyleBackColor = true;
+            btnProfil.BackgroundImage = (Image)resources.GetObject("btnProfil.BackgroundImage");
+            btnProfil.Location = new Point(46, 635);
+            btnProfil.Name = "btnProfil";
+            btnProfil.Size = new Size(319, 59);
+            btnProfil.TabIndex = 37;
+            btnProfil.UseVisualStyleBackColor = true;
+            btnProfil.Click += btnProfil_Click;
             // 
-            // button6
+            // btnBatal
             // 
-            button6.BackColor = SystemColors.ButtonHighlight;
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Location = new Point(560, 850);
-            button6.Name = "button6";
-            button6.Size = new Size(200, 44);
-            button6.TabIndex = 38;
-            button6.UseVisualStyleBackColor = false;
+            btnBatal.BackColor = SystemColors.ButtonHighlight;
+            btnBatal.BackgroundImage = (Image)resources.GetObject("btnBatal.BackgroundImage");
+            btnBatal.FlatAppearance.BorderSize = 0;
+            btnBatal.FlatStyle = FlatStyle.Flat;
+            btnBatal.Location = new Point(560, 850);
+            btnBatal.Name = "btnBatal";
+            btnBatal.Size = new Size(200, 44);
+            btnBatal.TabIndex = 38;
+            btnBatal.UseVisualStyleBackColor = false;
+            btnBatal.Click += btnBatal_Click;
             // 
-            // button7
+            // btnSimpan
             // 
-            button7.BackColor = SystemColors.ButtonHighlight;
-            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Location = new Point(838, 850);
-            button7.Name = "button7";
-            button7.Size = new Size(200, 44);
-            button7.TabIndex = 39;
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
+            btnSimpan.BackColor = SystemColors.ButtonHighlight;
+            btnSimpan.BackgroundImage = (Image)resources.GetObject("btnSimpan.BackgroundImage");
+            btnSimpan.FlatAppearance.BorderSize = 0;
+            btnSimpan.FlatStyle = FlatStyle.Flat;
+            btnSimpan.Location = new Point(838, 850);
+            btnSimpan.Name = "btnSimpan";
+            btnSimpan.Size = new Size(200, 44);
+            btnSimpan.TabIndex = 39;
+            btnSimpan.UseVisualStyleBackColor = false;
+            btnSimpan.Click += btnSimpan_Click;
             // 
             // EditProfil
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1511, 978);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnSimpan);
+            Controls.Add(btnBatal);
+            Controls.Add(btnProfil);
+            Controls.Add(btnTransaksi);
+            Controls.Add(btnTiket);
+            Controls.Add(btnBeranda);
             Controls.Add(btnNamaLengkap);
-            Controls.Add(btnEmailEdit);
+            Controls.Add(btnEmail);
             Controls.Add(button1);
             Controls.Add(pictureBox2);
             Name = "EditProfil";
@@ -182,13 +186,13 @@
         #endregion
         private PictureBox pictureBox2;
         private Button button1;
-        private TextBox btnEmailEdit;
+        private TextBox btnEmail;
         private TextBox btnNamaLengkap;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
+        private Button btnBeranda;
+        private Button btnTiket;
+        private Button btnTransaksi;
+        private Button btnProfil;
+        private Button btnBatal;
+        private Button btnSimpan;
     }
 }

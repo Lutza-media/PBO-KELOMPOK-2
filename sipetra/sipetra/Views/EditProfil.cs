@@ -23,18 +23,23 @@ namespace sipetra.Views
         {
             if (_currentUser == null)
             {
-                MessageBox.Show("Data user tidak ditemukan!");
+                MessageBox.Show("Data user tidak ditemukan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            // Tampilkan data di TextBox
             btnNamaLengkap.Text = _currentUser.Nama;
-            btnEmailEdit.Text = _currentUser.Email;
+            btnEmail.Text = _currentUser.Email;
         }
 
+        // ============================================================
+        // TOMBOL SIMPAN - UPDATE DATABASE DAN KEMBALI KE PROFIL
+        // ============================================================
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             try
             {
+                // Validasi Nama
                 if (string.IsNullOrWhiteSpace(btnNamaLengkap.Text))
                 {
                     MessageBox.Show("Nama tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -42,52 +47,60 @@ namespace sipetra.Views
                     return;
                 }
 
-                if (string.IsNullOrWhiteSpace(btnEmailEdit.Text))
+                // Validasi Email
+                if (string.IsNullOrWhiteSpace(btnEmail.Text))
                 {
                     MessageBox.Show("Email tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    btnEmailEdit.Focus();
+                    btnEmail.Focus();
                     return;
                 }
 
-                // Gunakan _currentUser yang sudah ada, bukan user baru
-                if (_currentUser == null)
+                if (!btnEmail.Text.Contains("@"))
                 {
-                    _currentUser = new User();
-                    if (!_currentUser.LoadUserData())
-                    {
-                        MessageBox.Show("Gagal memuat data user!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+                    MessageBox.Show("Format email tidak valid! Harus mengandung @", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    btnEmail.Focus();
+                    return;
                 }
 
-                // Perbaikan: gunakan UpdateProfil (tanpa huruf e di akhir) bukan UpdateProfile
-                bool berhasil = _currentUser.UpdateProfil(btnNamaLengkap.Text.Trim(), btnEmailEdit.Text.Trim());
+                // Update ke database
+                bool berhasil = _currentUser.UpdateProfil(
+                    btnNamaLengkap.Text.Trim(),
+                    btnEmail.Text.Trim()
+                );
 
                 if (berhasil)
                 {
-                    MessageBox.Show("Profil berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(" Profil berhasil diupdate!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Kembali ke Profil dengan data terbaru
                     Profil profil = new Profil(_currentUser);
                     profil.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Gagal mengupdate profil!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(" Gagal mengupdate profil!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void btnBatalEdit_Click(object sender, EventArgs e)
+        // ============================================================
+        // TOMBOL BATAL - KEMBALI TANPA MENYIMPAN
+        // ============================================================
+        private void btnBatal_Click(object sender, EventArgs e)
         {
             Profil profil = new Profil(_currentUser);
             profil.Show();
             this.Hide();
         }
 
+        // ============================================================
+        // NAVIGASI
+        // ============================================================
         private void btnBack_Click(object sender, EventArgs e)
         {
             Profil profil = new Profil(_currentUser);
@@ -121,37 +134,6 @@ namespace sipetra.Views
             Profil profil = new Profil(_currentUser);
             profil.Show();
             this.Hide();
-        }
-
-        // Event handler untuk Designer (biarkan kosong)
-        private void tbNama_TextChanged(object sender, EventArgs e)
-        {
-            // Kosongkan saja
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            // Kosongkan saja
-        }
-
-        private void btnTiket_Click_1(object sender, EventArgs e)
-        {
-            btnTiket_Click(sender, e);
-        }
-
-        private void bntProfil_Click(object sender, EventArgs e)
-        {
-            btnProfil_Click(sender, e);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
