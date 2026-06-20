@@ -42,9 +42,20 @@ namespace sipetra.Views
 
                     MessageBox.Show("Login berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    Beranda beranda = new Beranda(user);
-                    beranda.Show();
-                    this.Hide();
+                    if (user.IsAdmin)
+                    {
+                        // Login sebagai ADMIN -> arahkan ke AdminDashboard
+                        Dashboard adminDashboard = new Dashboard(user);
+                        adminDashboard.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        // Login sebagai CUSTOMER -> arahkan ke Beranda
+                        Beranda beranda = new Beranda(user);
+                        beranda.Show();
+                        this.Hide();
+                    }
                 }
                 else
                 {

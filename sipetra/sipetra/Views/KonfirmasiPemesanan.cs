@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace sipetra.Views
 {
-    public partial class DataTiket : Form
+    public partial class KonfirmasiPemesanan : Form
     {
-        public DataTiket()
+        public KonfirmasiPemesanan()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

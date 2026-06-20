@@ -63,7 +63,7 @@
             btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(497, 35);
+            btnBack.Location = new Point(478, 70);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(70, 70);
             btnBack.TabIndex = 15;
