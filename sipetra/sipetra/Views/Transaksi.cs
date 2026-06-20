@@ -118,7 +118,7 @@ namespace sipetra.Views
                     return;
                 }
 
-                DetailTransaksi detail = new DetailTransaksi(_currentUser);
+                DetailTransaksiWd detail = new DetailTransaksiWd(_currentUser);
                 detail.Show();
                 this.Hide();
             }

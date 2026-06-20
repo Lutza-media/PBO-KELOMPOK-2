@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Riwayat));
             pictureBox1 = new PictureBox();
-            btnBack = new Button();
             btnBeranda = new Button();
             btnProfil = new Button();
             btnTransaksi = new Button();
             btnTiket = new Button();
+            btnDataTransaksi = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -47,19 +48,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // btnBack
-            // 
-            btnBack.BackColor = SystemColors.ButtonHighlight;
-            btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
-            btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(528, 72);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(70, 70);
-            btnBack.TabIndex = 16;
-            btnBack.UseVisualStyleBackColor = false;
-            btnBack.Click += btnBack_Click;
             // 
             // btnBeranda
             // 
@@ -117,16 +105,46 @@
             btnTiket.UseVisualStyleBackColor = false;
             btnTiket.Click += btnTiket_Click;
             // 
+            // btnDataTransaksi
+            // 
+            btnDataTransaksi.BackColor = SystemColors.ButtonHighlight;
+            btnDataTransaksi.BackgroundImage = (Image)resources.GetObject("btnDataTransaksi.BackgroundImage");
+            btnDataTransaksi.FlatAppearance.BorderSize = 0;
+            btnDataTransaksi.FlatStyle = FlatStyle.Flat;
+            btnDataTransaksi.ForeColor = SystemColors.Control;
+            btnDataTransaksi.Location = new Point(445, 143);
+            btnDataTransaksi.Margin = new Padding(2);
+            btnDataTransaksi.Name = "btnDataTransaksi";
+            btnDataTransaksi.Size = new Size(180, 82);
+            btnDataTransaksi.TabIndex = 48;
+            btnDataTransaksi.UseVisualStyleBackColor = false;
+            btnDataTransaksi.Click += btnDataTransaksi_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonHighlight;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = SystemColors.Control;
+            button1.Location = new Point(643, 143);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(223, 82);
+            button1.TabIndex = 49;
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Riwayat
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1511, 978);
+            Controls.Add(button1);
+            Controls.Add(btnDataTransaksi);
             Controls.Add(btnTiket);
             Controls.Add(btnTransaksi);
             Controls.Add(btnProfil);
             Controls.Add(btnBeranda);
-            Controls.Add(btnBack);
             Controls.Add(pictureBox1);
             Name = "Riwayat";
             Text = "Riwayat";
@@ -138,10 +156,11 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button btnBack;
         private Button btnBeranda;
         private Button btnProfil;
         private Button btnTransaksi;
         private Button btnTiket;
+        private Button btnDataTransaksi;
+        private Button button1;
     }
 }

@@ -11,18 +11,18 @@ using sipetra.Models;
 
 namespace sipetra.Views
 {
-    public partial class DetailTransaksi : Form
+    public partial class DetailTransaksiWd : Form
     {
         private User _currentUser;  
 
-        public DetailTransaksi()
+        public DetailTransaksiWd()
         {
             InitializeComponent();
             pictureBox2.SendToBack();
         }
 
         // TAMBAHAN
-        public DetailTransaksi(User user) : this()
+        public DetailTransaksiWd(User user) : this()
         {
             _currentUser = user;
         }

@@ -89,7 +89,7 @@
             btnBeranda.FlatAppearance.BorderColor = Color.White;
             btnBeranda.FlatAppearance.BorderSize = 0;
             btnBeranda.FlatStyle = FlatStyle.Flat;
-            btnBeranda.Location = new Point(46, 359);
+            btnBeranda.Location = new Point(46, 363);
             btnBeranda.Name = "btnBeranda";
             btnBeranda.Size = new Size(319, 59);
             btnBeranda.TabIndex = 34;

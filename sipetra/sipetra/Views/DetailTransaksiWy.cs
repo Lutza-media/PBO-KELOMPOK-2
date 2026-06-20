@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace sipetra.Views
 {
-    public partial class DetailTransaksi3 : Form
+    public partial class DetailTransaksiWy : Form
     {
-        public DetailTransaksi3()
+        public DetailTransaksiWy()
         {
             InitializeComponent();
         }

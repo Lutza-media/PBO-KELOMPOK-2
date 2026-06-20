@@ -54,6 +54,12 @@ namespace sipetra.Views
             this.Hide();
         }
 
+        private void btnDataTransaksi_Click(object sender, EventArgs e)
+        {
+            Transaksi transaksi = new Transaksi(_currentUser);
+            transaksi.Show();
+            this.Hide();
+        }
         private void btnProfil_Click(object sender, EventArgs e)
         {
             Profil profil = new Profil(_currentUser);
