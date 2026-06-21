@@ -1,58 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Views\Beranda.cs">
+    <Compile Update="Views\User\Beranda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Daftar.cs">
+    <Compile Update="Views\Shered\Daftar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Dashboard.cs">
+    <Compile Update="Views\Admin\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\DataTiket.cs">
+    <Compile Update="Views\User\DataTiket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\DetailTransaksiWd.cs">
+    <Compile Update="Views\User\DetailTransaksiWd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\DetailTransaksiWy.cs">
+    <Compile Update="Views\User\DetailTransaksiWy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\EditProfil.cs">
+    <Compile Update="Views\User\EditProfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\KelolaUser.cs">
+    <Compile Update="Views\User\KelolaUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\KonfirmasiPembayaran.cs">
+    <Compile Update="Views\Shered\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\KonfirmasiPemesanan.cs">
+    <Compile Update="Views\User\Pembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Login.cs">
+    <Compile Update="Views\User\Pesanan1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Pembayaran.cs">
+    <Compile Update="Views\User\Pesanan2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Pesanan1.cs">
+    <Compile Update="Views\User\Riwayat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Pesanan2.cs">
+    <Compile Update="Views\User\Profil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Riwayat.cs">
+    <Compile Update="Views\User\Tiket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Tiket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Views\Profil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Views\Transaksi.cs">
+    <Compile Update="Views\User\Transaksi.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

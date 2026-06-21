@@ -7,7 +7,8 @@ namespace sipetra.Controllers
     public class UserControllers
     {
         private UserContext context = new UserContext();
-        public bool RegisterUser(User user)
+
+        public bool RegisterUser(UserModel user)  // ✅ UserModel (bukan UserModels)
         {
             if (string.IsNullOrWhiteSpace(user.Nama))
             {
@@ -22,7 +23,7 @@ namespace sipetra.Controllers
             return user.Register();
         }
 
-        public bool Login(User user)
+        public bool Login(UserModel user)  // ✅ UserModel (bukan UserModels)
         {
             if (string.IsNullOrWhiteSpace(user.Email))
             {

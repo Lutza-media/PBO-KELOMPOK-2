@@ -22,8 +22,8 @@ namespace sipetra.Helpers
         /// <summary>
         /// Mengirim data user ke form
         /// </summary>
-        /// <param name="user">Objek User yang berisi data pengguna</param>
-        void SetUserData(User user);
+        /// <param name="user">Objek UserModel yang berisi data pengguna</param>
+        void SetUserData(UserModel user);
 
         /// <summary>
         /// Navigasi ke form lain

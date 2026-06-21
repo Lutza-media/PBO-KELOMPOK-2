@@ -6,22 +6,19 @@ using System;
 
 namespace sipetra.Models
 {
-    public class AdminUser : User
+    public class AdminUser : UserModel  // ← User MENJADI UserModel
     {
-        // Constructor kosong
         public AdminUser() : base()
         {
             IsAdmin = true;
         }
 
-        // Constructor berparameter
         public AdminUser(string nama, string email, string password)
             : base(nama, email, password)
         {
             IsAdmin = true;
         }
 
-        // POLYMORPHISM: override method dari base class User
         public override string GetRole()
         {
             return "Admin";

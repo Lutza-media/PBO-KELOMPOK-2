@@ -9,13 +9,18 @@ namespace sipetra.Helpers
     {
         private static readonly Lazy<UserSession> lazy =
             new Lazy<UserSession>(() => new UserSession());
+
         public static UserSession Instance { get { return lazy.Value; } }
-        public User CurrentUser { get; private set; }
-        private UserSession() {}
-        public void SetUser(User user)
+
+        public UserModel CurrentUser { get; private set; }  // ✅ UserModel
+
+        private UserSession() { }
+
+        public void SetUser(UserModel user)  // ✅ UserModel
         {
             CurrentUser = user;
         }
+
         public void ClearSession()
         {
             CurrentUser = null;
