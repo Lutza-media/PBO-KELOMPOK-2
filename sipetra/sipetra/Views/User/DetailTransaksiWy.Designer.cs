@@ -2,15 +2,8 @@
 {
     partial class DetailTransaksiWy
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailTransaksiWy));
@@ -35,14 +24,14 @@
             btnTiket = new Button();
             btnTransaksi = new Button();
             btnProfil = new Button();
-            tbTanggal = new TextBox();
-            tbStatus = new TextBox();
-            tbMetodeBayar = new TextBox();
-            tbNama = new TextBox();
-            tbJumlah = new TextBox();
-            tbJenisTiket = new TextBox();
-            tbHargabayar = new TextBox();
-            tbHargaTiket = new TextBox();
+            tbTanggal = new Label();
+            tbStatus = new Label();
+            tbMetodeBayar = new Label();
+            tbNama = new Label();
+            tbJumlah = new Label();
+            tbJenisTiket = new Label();
+            tbHargabayar = new Label();
+            tbHargaTiket = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -123,97 +112,93 @@
             // 
             // tbTanggal
             // 
-            tbTanggal.BackColor = Color.White;
-            tbTanggal.BorderStyle = BorderStyle.None;
-            tbTanggal.Location = new Point(1060, 516);
+            tbTanggal.BackColor = Color.Transparent;
+            tbTanggal.Location = new Point(1060, 514);
             tbTanggal.Name = "tbTanggal";
-            tbTanggal.ReadOnly = true;
+            tbTanggal.AutoSize = false;
             tbTanggal.Size = new Size(218, 24);
             tbTanggal.TabIndex = 40;
             // 
             // tbStatus
             // 
-            tbStatus.BackColor = Color.White;
-            tbStatus.BorderStyle = BorderStyle.None;
-            tbStatus.Location = new Point(1115, 687);
+            tbStatus.BackColor = Color.Transparent;
+            tbStatus.Location = new Point(1115, 685);
             tbStatus.Name = "tbStatus";
-            tbStatus.ReadOnly = true;
+            tbStatus.AutoSize = false;
             tbStatus.Size = new Size(218, 24);
             tbStatus.TabIndex = 39;
             // 
             // tbMetodeBayar
             // 
-            tbMetodeBayar.BackColor = Color.White;
-            tbMetodeBayar.BorderStyle = BorderStyle.None;
-            tbMetodeBayar.Location = new Point(1151, 654);
+            tbMetodeBayar.BackColor = Color.Transparent;
+            tbMetodeBayar.Location = new Point(1151, 652);
             tbMetodeBayar.Name = "tbMetodeBayar";
-            tbMetodeBayar.ReadOnly = true;
+            tbMetodeBayar.AutoSize = false;
             tbMetodeBayar.Size = new Size(218, 24);
             tbMetodeBayar.TabIndex = 38;
             // 
             // tbNama
             // 
-            tbNama.BackColor = Color.White;
-            tbNama.BorderStyle = BorderStyle.None;
-            tbNama.Location = new Point(1049, 449);
+            tbNama.BackColor = Color.Transparent;
+            tbNama.Location = new Point(1049, 447);
             tbNama.Name = "tbNama";
-            tbNama.ReadOnly = true;
+            tbNama.AutoSize = false;
             tbNama.Size = new Size(218, 24);
             tbNama.TabIndex = 37;
             // 
             // tbJumlah
             // 
-            tbJumlah.BackColor = Color.White;
-            tbJumlah.BorderStyle = BorderStyle.None;
-            tbJumlah.Location = new Point(1063, 483);
+            tbJumlah.BackColor = Color.Transparent;
+            tbJumlah.Location = new Point(1063, 481);
             tbJumlah.Name = "tbJumlah";
-            tbJumlah.ReadOnly = true;
+            tbJumlah.AutoSize = false;
             tbJumlah.Size = new Size(218, 24);
             tbJumlah.TabIndex = 36;
             // 
             // tbJenisTiket
             // 
-            tbJenisTiket.BackColor = Color.White;
-            tbJenisTiket.BorderStyle = BorderStyle.None;
-            tbJenisTiket.Location = new Point(1086, 551);
+            tbJenisTiket.BackColor = Color.Transparent;
+            tbJenisTiket.Location = new Point(1086, 549);
             tbJenisTiket.Name = "tbJenisTiket";
-            tbJenisTiket.ReadOnly = true;
+            tbJenisTiket.AutoSize = false;
             tbJenisTiket.Size = new Size(218, 24);
             tbJenisTiket.TabIndex = 35;
             // 
             // tbHargabayar
             // 
-            tbHargabayar.BackColor = Color.White;
-            tbHargabayar.BorderStyle = BorderStyle.None;
-            tbHargabayar.Location = new Point(1107, 619);
+            tbHargabayar.BackColor = Color.Transparent;
+            tbHargabayar.Location = new Point(1107, 617);
             tbHargabayar.Name = "tbHargabayar";
-            tbHargabayar.ReadOnly = true;
+            tbHargabayar.AutoSize = false;
             tbHargabayar.Size = new Size(218, 24);
             tbHargabayar.TabIndex = 34;
             // 
             // tbHargaTiket
             // 
-            tbHargaTiket.BackColor = Color.White;
-            tbHargaTiket.BorderStyle = BorderStyle.None;
-            tbHargaTiket.Location = new Point(1090, 585);
+            tbHargaTiket.BackColor = Color.Transparent;
+            tbHargaTiket.Location = new Point(1090, 583);
             tbHargaTiket.Name = "tbHargaTiket";
-            tbHargaTiket.ReadOnly = true;
+            tbHargaTiket.AutoSize = false;
             tbHargaTiket.Size = new Size(218, 24);
             tbHargaTiket.TabIndex = 33;
+            // 
+            // Label-label di atas dijadikan child dari pictureBox1 (bukan Form)
+            // supaya transparansinya tembus ke gambar, bukan ke warna Form
+            // 
+            pictureBox1.Controls.Add(tbTanggal);
+            pictureBox1.Controls.Add(tbStatus);
+            pictureBox1.Controls.Add(tbMetodeBayar);
+            pictureBox1.Controls.Add(tbNama);
+            pictureBox1.Controls.Add(tbJumlah);
+            pictureBox1.Controls.Add(tbJenisTiket);
+            pictureBox1.Controls.Add(tbHargabayar);
+            pictureBox1.Controls.Add(tbHargaTiket);
             // 
             // DetailTransaksiWy
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1511, 1027);
-            Controls.Add(tbTanggal);
-            Controls.Add(tbStatus);
-            Controls.Add(tbMetodeBayar);
-            Controls.Add(tbNama);
-            Controls.Add(tbJumlah);
-            Controls.Add(tbJenisTiket);
-            Controls.Add(tbHargabayar);
-            Controls.Add(tbHargaTiket);
             Controls.Add(btnProfil);
             Controls.Add(btnTransaksi);
             Controls.Add(btnTiket);
@@ -235,13 +220,13 @@
         private Button btnTiket;
         private Button btnTransaksi;
         private Button btnProfil;
-        private TextBox tbTanggal;
-        private TextBox tbStatus;
-        private TextBox tbMetodeBayar;
-        private TextBox tbNama;
-        private TextBox tbJumlah;
-        private TextBox tbJenisTiket;
-        private TextBox tbHargabayar;
-        private TextBox tbHargaTiket;
+        private Label tbTanggal;
+        private Label tbStatus;
+        private Label tbMetodeBayar;
+        private Label tbNama;
+        private Label tbJumlah;
+        private Label tbJenisTiket;
+        private Label tbHargabayar;
+        private Label tbHargaTiket;
     }
 }

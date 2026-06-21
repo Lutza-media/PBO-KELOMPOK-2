@@ -21,11 +21,11 @@
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 
-            // TextBox Nama Lengkap
-            tbNamaLengkap = new TextBox();
+            // Label Nama Lengkap (diganti dari TextBox agar transparan)
+            tbNamaLengkap = new Label();
 
-            // TextBox Email
-            tbEmail = new TextBox();
+            // Label Email (diganti dari TextBox agar transparan)
+            tbEmail = new Label();
 
             // Tombol Edit Profil
             btnEditProfil = new Button();
@@ -49,27 +49,24 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
 
-            // ============================================================
-            // txtNamaLengkap (TextBox Nama)
-            // ============================================================
-            tbNamaLengkap.BackColor = Color.White;
-            tbNamaLengkap.BorderStyle = BorderStyle.FixedSingle;
+            tbNamaLengkap.BackColor = Color.Transparent;
+            tbNamaLengkap.AutoSize = false;
             tbNamaLengkap.Location = new Point(833, 315);
             tbNamaLengkap.Name = "txtNamaLengkap";
-            tbNamaLengkap.ReadOnly = true;
             tbNamaLengkap.Size = new Size(273, 31);
             tbNamaLengkap.TabIndex = 0;
+            tbNamaLengkap.TextAlign = ContentAlignment.MiddleLeft;
 
-            // ============================================================
-            // txtEmail (TextBox Email)
-            // ============================================================
-            tbEmail.BackColor = Color.White;
-            tbEmail.BorderStyle = BorderStyle.FixedSingle;
+            tbEmail.BackColor = Color.Transparent;
+            tbEmail.AutoSize = false;
             tbEmail.Location = new Point(833, 423);
             tbEmail.Name = "txtEmail";
-            tbEmail.ReadOnly = true;
             tbEmail.Size = new Size(273, 31);
             tbEmail.TabIndex = 1;
+            tbEmail.TextAlign = ContentAlignment.MiddleLeft;
+
+            pictureBox1.Controls.Add(tbNamaLengkap);
+            pictureBox1.Controls.Add(tbEmail);
 
             // ============================================================
             // btnEditProfil (Tombol Edit Profil)
@@ -148,8 +145,6 @@
             Controls.Add(btnTiket);
             Controls.Add(btnBeranda);
             Controls.Add(btnEditProfil);
-            Controls.Add(tbEmail);
-            Controls.Add(tbNamaLengkap);
             Controls.Add(pictureBox1);
             Name = "Profil";
             Text = "Profil";
@@ -162,8 +157,8 @@
         // DEKLARASI KOMPONEN
         // ============================================================
         private PictureBox pictureBox1;
-        private TextBox tbNamaLengkap;  // ← Nama diubah
-        private TextBox tbEmail;        // ← Nama diubah
+        private Label tbNamaLengkap;  // ← Diganti dari TextBox jadi Label agar transparan
+        private Label tbEmail;        // ← Diganti dari TextBox jadi Label agar transparan
         private Button btnEditProfil;    // ← Nama diubah dari tbEditProfil
         private Button btnBeranda;
         private Button btnTiket;
